@@ -85,6 +85,7 @@ def get_right_url_and_title(index_list):
     title_list = list()
     error_list = list()
     finish_list = list()
+    vip_list = list()
     for index in index_list:
         url = url_format.format(index)
         rsp = requests.get(url)
@@ -92,9 +93,12 @@ def get_right_url_and_title(index_list):
             title = re.search(r'<title>(.+)</title>', rsp.content).group(1)
             title_list.append((url, title))
             finish_list.append(index)
+            if not re.search(r"window.prePageURL", rsp.content) \
+                and not re.search(r"window.nextPageURL", rsp.content):
+                vip_list.append(title_list[-1])
         else:
             error_list.append(index)
-    data = {"title_list":title_list, "error_list":error_list, "finish_list":finish_list}
+    data = {"title_list":title_list, "error_list":error_list, "finish_list":finish_list, "vip_list":vip_list}
     return data
 
 def write_url_file(data_list):
@@ -107,10 +111,20 @@ def write_url_file(data_list):
             f.write("{}. {} === {}\n".format("*", title, url))
             count += 1
 
+def write_vip_file(data_list):
+    root_path = os.path.dirname(os.path.abspath(sys.argv[0]))
+    file_name = 'bc_vip_url.log'
+    log_path = os.path.join(root_path, file_name)
+    count = 1
+    with open(log_path, 'a') as f:
+        for url, title in data_list:
+            f.write("{}. {} === {}\n".format("*", title, url))
+            count += 1
+
 def main():
     # task args
     url_count = 1000
-    step = 30
+    step = 100
     index_data = read_filter_index()
     index_set = index_data.get("index_set", set())
     task_args_list = list()
@@ -131,6 +145,7 @@ def main():
     title_sum = list()
     err_sum = index_data["error_list"]
     fin_sum = index_data["finish_list"]
+    vip_sum = list()
 
     if False:
         for args in task_args_list:
@@ -138,6 +153,7 @@ def main():
             title_sum.extend(data["title_list"])
             err_sum.extend(data["error_list"])
             fin_sum.extend(data["finish_list"])
+            vip_sum.extend(data["vip_list"])
     else:
         pool = multiprocessing.Pool(4)
         ret = pool.map_async(func=get_right_url_and_title, iterable=task_args_list,)
@@ -146,10 +162,12 @@ def main():
             title_sum.extend(data["title_list"])
             err_sum.extend(data["error_list"])
             fin_sum.extend(data["finish_list"])
+            vip_sum.extend(data["vip_list"])
 
     # write data
     write_filter_index(index_data)
     write_url_file(title_sum)
+    write_vip_file(vip_sum)
 
 if __name__ == "__main__":
     start_time = time.time()

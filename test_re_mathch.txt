@@ -1,0 +1,16 @@
+local RoleEventProp = {
+    role_register = {"a", "#a",},
+    role_login = {},
+    role_logout = {},
+}
+
+
+local RoleUserProp = {
+    urs = 0,
+    uuid = 0,
+    server_id = 0,
+    role_level = 1,
+    vip_level = 1,
+}
+
+abcdefg
