@@ -9,10 +9,17 @@ import time
 import multiprocessing
 import json
 
-def read_filter_index():
-    file_name = "bc_filter_index.log"
+def get_file_path(file_name):
     root_path = os.path.dirname(os.path.abspath(sys.argv[0]))
     file_path = os.path.join(root_path, file_name)
+    return file_path
+
+
+def get_file_bc_filter_index():
+    return get_file_path("bc_filter_index.log")
+
+def read_filter_index():
+    file_path = get_file_bc_filter_index()
 
     if not os.path.exists(file_path):
         return {"finish_list":list(), "error_list":list(), "index_set":set()}
@@ -45,16 +52,13 @@ def filter_index_decode(content):
     index_set = set(finish_list) | set(error_list)
     return {"finish_list":finish_list, "error_list":error_list, "index_set":index_set}
 
-
 def write_filter_index(data):
     content = filter_index_encode(data)
 
-    file_name = "bc_filter_index.log"
-    root_path = os.path.dirname(os.path.abspath(sys.argv[0]))
-    file_path = os.path.join(root_path, file_name)
+    file_path = get_file_bc_filter_index()
 
     with open(file_path, 'w') as f:
-        content = f.write(content)
+        f.write(content)
 
     return True
 
@@ -78,7 +82,39 @@ def filter_index_encode(data):
     error_str = _encode("error", data.get("error_list", None))
     return finish_str + "\n\n" +error_str
 
+def get_file_last_index():
+    return get_file_path("bc_last_index.log")
 
+def read_last_index():
+    file_path = get_file_last_index()
+
+    content = 0
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as f:
+            content = f.read()
+    return int(content)
+
+def write_last_index(index):
+    file_path = get_file_last_index()
+    with open(file_path, 'w') as f:
+        f.write(str(index))
+
+
+def write_url_file(data_list):
+    file_path = get_file_path('bc_url.log')
+    count = 1
+    with open(file_path, 'a') as f:
+        for url, title in data_list:
+            f.write("{}. {} === {}\n".format("*", title, url))
+            count += 1
+
+def write_vip_file(data_list):
+    file_path = get_file_path('bc_vip_url.log')
+    count = 1
+    with open(file_path, 'a') as f:
+        for url, title in data_list:
+            f.write("{}. {} === {}\n".format("*", title, url))
+            count += 1
 
 def get_right_url_and_title(index_list):
     url_format = r'http://c.biancheng.net/view/{}.html'
@@ -101,76 +137,115 @@ def get_right_url_and_title(index_list):
     data = {"title_list":title_list, "error_list":error_list, "finish_list":finish_list, "vip_list":vip_list}
     return data
 
-def write_url_file(data_list):
-    root_path = os.path.dirname(os.path.abspath(sys.argv[0]))
-    file_name = 'bc_url.log'
-    log_path = os.path.join(root_path, file_name)
-    count = 1
-    with open(log_path, 'a') as f:
-        for url, title in data_list:
-            f.write("{}. {} === {}\n".format("*", title, url))
-            count += 1
 
-def write_vip_file(data_list):
-    root_path = os.path.dirname(os.path.abspath(sys.argv[0]))
-    file_name = 'bc_vip_url.log'
-    log_path = os.path.join(root_path, file_name)
-    count = 1
-    with open(log_path, 'a') as f:
-        for url, title in data_list:
-            f.write("{}. {} === {}\n".format("*", title, url))
-            count += 1
+def build_result_data(ret, data):
+    ret["title_sum"].extend(data["title_list"])
+    ret["vip_sum"].extend(data["vip_list"])
+    if ret.has_key("err_num"):
+        ret["err_sum"].extend(data["error_list"])
+    if ret.has_key("fin_sum"):
+        ret["fin_sum"].extend(data["finish_list"])
 
-def main():
-    # task args
-    url_count = 1000
+def once():
+    # args
+    url_count = 100
     step = 100
+    is_mult_process = False
+
+    # build all task
     index_data = read_filter_index()
     index_set = index_data.get("index_set", set())
-    task_args_list = list()
-    task_args = list()
+    all_task, task_args = list(), list()
     count = 0
-    for i in range(url_count):
+    for i in xrange(url_count):
         if str(i) in index_set: continue
         count += 1
         task_args.append(i)
         if count == step:
             count = 0
-            task_args_list.append(task_args)
+            all_task.append(task_args)
             task_args = list()
     if task_args:
-        task_args_list.append(task_args)
+        all_task.append(task_args)
 
     # runging task
-    title_sum = list()
-    err_sum = index_data["error_list"]
-    fin_sum = index_data["finish_list"]
-    vip_sum = list()
+    result = dict(
+        title_sum = list(),
+        err_sum = index_data["error_list"],
+        fin_sum = index_data["finish_list"],
+        vip_sum = list(),
+    )
 
-    if False:
-        for args in task_args_list:
+    if not is_mult_process:
+        for args in all_task:
             data = get_right_url_and_title(args)
-            title_sum.extend(data["title_list"])
-            err_sum.extend(data["error_list"])
-            fin_sum.extend(data["finish_list"])
-            vip_sum.extend(data["vip_list"])
+            build_result_data(result, data)
     else:
-        pool = multiprocessing.Pool(4)
-        ret = pool.map_async(func=get_right_url_and_title, iterable=task_args_list,)
-        ret = ret.get(99999)
-        for data in ret:
-            title_sum.extend(data["title_list"])
-            err_sum.extend(data["error_list"])
-            fin_sum.extend(data["finish_list"])
-            vip_sum.extend(data["vip_list"])
+        cpu_count = multiprocessing.cpu_count()
+        pool = multiprocessing.Pool(cpu_count)
+        all_data = pool.map_async(func=get_right_url_and_title, iterable=all_task,)
+        all_data = all_data.get(99999)
+        for data in all_data:
+           build_result_data(result, data)
 
     # write data
     write_filter_index(index_data)
-    write_url_file(title_sum)
-    write_vip_file(vip_sum)
+    write_url_file(result["title_sum"])
+    write_vip_file(result["vip_sum"])
+
+def many():
+    # args
+    url_count = 100
+    step = 100
+    is_mult_process = False
+
+    # build all task
+    start_index = read_last_index()
+    all_task, task_args = list(), list()
+    count = 0
+    for i in xrange(start_index, url_count):
+        count += 1
+        task_args.append(i)
+        if count == step:
+            count = 0
+            all_task.append(task_args)
+            task_args = list()
+    if task_args:
+        all_task.append(task_args)
+
+    # runging task
+    result = dict(
+        title_sum = list(),
+        vip_sum = list(),
+    )
+
+    if not is_mult_process:
+        for args in all_task:
+            data = get_right_url_and_title(args)
+            build_result_data(result, data)
+    else:
+        cpu_count = multiprocessing.cpu_count()
+        pool = multiprocessing.Pool(cpu_count)
+        all_data = pool.map_async(func=get_right_url_and_title, iterable=all_task,)
+        all_data = all_data.get(99999)
+        for data in all_data:
+           build_result_data(result, data)
+
+    # write data
+    write_url_file(result["title_sum"])
+    write_vip_file(result["vip_sum"])
+    write_last_index(url_count)
+
+def main():
+    import datetime
+    print time.time()
+    print datetime.datetime()
+
 
 if __name__ == "__main__":
     start_time = time.time()
+    # once()
+    many()
     main()
     end_time = time.time()
     print "\n[Finish]\nstart_ts:{}, end_ts:{}, run_time:{:.6}".format(start_time, end_time, end_time-start_time)
