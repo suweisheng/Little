@@ -5,6 +5,7 @@ import sys
 import time
 import codecs
 import locale
+import struct
 
 # Python2.x中的编码问题
 # https://www.cnblogs.com/huxi/archive/2010/12/05/1897271.html
@@ -254,6 +255,22 @@ def test_json():
     print repr(ret)
     print ret # 能正确输出中文
 
+def test_big_little_endian():
+    print(sys.byteorder) # 判断当前系统的字节序/大小端
+    
+    # python2.x 没有bytes类型， str类型本质上字节序，可以当作bytes
+    # python3.x 有bytes类型，str类型是unicode类型，去掉了unicode类型
+
+    # pack unpack 字节型数据类型和二进制数据类型的转换
+
+
+    # pack 将任意数据类型转变为bytes数据类型 如：>I 表示字节顺序是大端序，也就是网络序，I表示4字节无符号整数
+    obj = [1,2]
+    ret = struct.pack(">II", *obj)
+    print type(ret)
+    ret = struct.unpack(">II", ret)
+    print ret
+
 def main():
     # test_encoding()
     # test_default_encoding()
@@ -261,7 +278,8 @@ def main():
     # test_codecs()
     # test_locale()
     # test_str_unicode()
-    test_json()
+    # test_json()
+    test_big_little_endian()
 
 if __name__ == "__main__":
     start_time = time.time()

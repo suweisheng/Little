@@ -150,7 +150,7 @@ def once():
     # args
     url_count = 100
     step = 100
-    is_mult_process = False
+    is_mult_process = True
 
     # build all task
     index_data = read_filter_index()
@@ -184,6 +184,7 @@ def once():
         cpu_count = multiprocessing.cpu_count()
         pool = multiprocessing.Pool(cpu_count)
         all_data = pool.map_async(func=get_right_url_and_title, iterable=all_task,)
+        pool.close()
         all_data = all_data.get(99999)
         for data in all_data:
            build_result_data(result, data)
@@ -195,9 +196,9 @@ def once():
 
 def many():
     # args
-    url_count = 100
+    url_count = 20000
     step = 100
-    is_mult_process = False
+    is_mult_process = True
 
     # build all task
     start_index = read_last_index()
@@ -223,29 +224,37 @@ def many():
         for args in all_task:
             data = get_right_url_and_title(args)
             build_result_data(result, data)
+
     else:
         cpu_count = multiprocessing.cpu_count()
         pool = multiprocessing.Pool(cpu_count)
         all_data = pool.map_async(func=get_right_url_and_title, iterable=all_task,)
+        pool.close()
         all_data = all_data.get(99999)
         for data in all_data:
            build_result_data(result, data)
 
     # write data
-    write_url_file(result["title_sum"])
-    write_vip_file(result["vip_sum"])
-    write_last_index(url_count)
+    if not is_mult_process:
+        write_last_index(url_count)
+        write_url_file(result["title_sum"])
+        write_vip_file(result["vip_sum"])
+    else:
+        write_last_index(url_count)
+        p1 = multiprocessing.Process(target=write_url_file, args=(result["title_sum"],))
+        p1.start()
+        p2 = multiprocessing.Process(target=write_vip_file, args=(result["vip_sum"],))
+        p2.start()
+        p1.join()
+        p2.join()
+
 
 def main():
-    import datetime
-    print time.time()
-    print datetime.datetime()
-
+    many()
 
 if __name__ == "__main__":
     start_time = time.time()
     # once()
-    many()
     main()
     end_time = time.time()
-    print "\n[Finish]\nstart_ts:{}, end_ts:{}, run_time:{:.6}".format(start_time, end_time, end_time-start_time)
+    print "[Finish {:.4f} s]".format(end_time-start_time)

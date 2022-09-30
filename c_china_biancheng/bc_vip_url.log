@@ -4,3 +4,1009 @@
 *. Go语言字符串截取（获取字符串的某一段字符） === http://c.biancheng.net/view/38.html
 *. Go语言字符串拼接（连接） === http://c.biancheng.net/view/40.html
 *. Go语言fmt.Sprintf（格式化输出） === http://c.biancheng.net/view/41.html
+*. C语言的优点和缺点 === http://c.biancheng.net/view/132.html
+*. 学习C语言的心得 === http://c.biancheng.net/view/135.html
+*. 英语和数学不好能学好C语言吗 === http://c.biancheng.net/view/137.html
+*. 字节（Byte）是什么？如何换算？ === http://c.biancheng.net/view/140.html
+*. 进制是什么？ === http://c.biancheng.net/view/141.html
+*. C89（C90）、C99、C11——C语言的三套标准 === http://c.biancheng.net/view/143.html
+*. C++构造函数（从本质上理解） === http://c.biancheng.net/view/149.html
+*. C++对象数组中使用构造函数 === http://c.biancheng.net/view/150.html
+*. C++拷贝构造函数（复制构造函数）详解 === http://c.biancheng.net/view/151.html
+*. C++析构函数详解 === http://c.biancheng.net/view/152.html
+*. C语言变量定义和赋值 === http://c.biancheng.net/view/153.html
+*. C语言变量命名规则 === http://c.biancheng.net/view/155.html
+*. C语言变量初始化是必须的吗？不初始化会怎样？ === http://c.biancheng.net/view/156.html
+*. C语言自动类型转换 === http://c.biancheng.net/view/157.html
+*. C语言代码规范（编程规范） === http://c.biancheng.net/view/158.html
+*. printf用法大全，C语言printf格式控制符一览表 === http://c.biancheng.net/view/159.html
+*. C语言scanf函数用法完全攻略 === http://c.biancheng.net/view/160.html
+*. C语言运算符优先级和结合性一览表 === http://c.biancheng.net/view/161.html
+*. if else用法详解，C语言if else用法完全攻略 === http://c.biancheng.net/view/163.html
+*. C++静态成员变量和静态成员函数详解 === http://c.biancheng.net/view/165.html
+*. C++常对象和常成员函数详解 === http://c.biancheng.net/view/166.html
+*. C++成员对象和封闭类详解 === http://c.biancheng.net/view/167.html
+*. C++友元函数和友元类（C++ friend）详解 === http://c.biancheng.net/view/169.html
+*. C++ this指针（直戳本质） === http://c.biancheng.net/view/170.html
+*. switch case语句，switch case用法详解 === http://c.biancheng.net/view/171.html
+*. for的用法详解，C语言for循环完全攻略 === http://c.biancheng.net/view/172.html
+*. C语言注释详解（两种注释方式） === http://c.biancheng.net/view/174.html
+*. C语言数据类型分类 === http://c.biancheng.net/view/176.html
+*. C语言整数类型（含取值范围和长度） === http://c.biancheng.net/view/177.html
+*. for循环嵌套，C语言for循环嵌套详解 === http://c.biancheng.net/view/178.html
+*. void_C语言void关键字详解 === http://c.biancheng.net/view/179.html
+*. while循环，C语言while循环详解 === http://c.biancheng.net/view/180.html
+*. do while循环，C语言do while循环详解 === http://c.biancheng.net/view/181.html
+*. break和continue，C语言break和continue的用法和区别 === http://c.biancheng.net/view/182.html
+*. 清空输入缓冲器，C语言清空输入缓冲区完全攻略 === http://c.biancheng.net/view/183.html
+*. 数组的定义，初始化和使用，C语言数组详解 === http://c.biancheng.net/view/184.html
+*. 数组之间的赋值，C语言数组之间赋值详解 === http://c.biancheng.net/view/185.html
+*. 数组的长度，C语言获取数组长度详解 === http://c.biancheng.net/view/186.html
+*. #define用法，C语言#define详解 === http://c.biancheng.net/view/187.html
+*. 数组倒序排列，数组倒置，C语言数组倒序算法详解 === http://c.biancheng.net/view/188.html
+*. 顺序查找算法和折半（二分法）查找算法，C语言查找算法详解 === http://c.biancheng.net/view/189.html
+*. C++语言的历史 === http://c.biancheng.net/view/190.html
+*. 数组元素的添加或删除，C语言数组添加和删除元素详解 === http://c.biancheng.net/view/191.html
+*. 冒泡排序算法，C语言冒泡排序算法详解 === http://c.biancheng.net/view/192.html
+*. C++输入输出 === http://c.biancheng.net/view/193.html
+*. C++默认参数（函数参数的默认值） === http://c.biancheng.net/view/194.html
+*. C++引用类型详解 === http://c.biancheng.net/view/195.html
+*. 选择排序算法，C语言选择排序算法详解 === http://c.biancheng.net/view/197.html
+*. 快速排序算法，C语言快速排序算法详解 === http://c.biancheng.net/view/198.html
+*. C++内联函数（C++ inline）详解 === http://c.biancheng.net/view/199.html
+*. 二维数组的定义、初始化和输出，C语言二维数组详解 === http://c.biancheng.net/view/200.html
+*. C++函数重载详解 === http://c.biancheng.net/view/201.html
+*. 函数是什么，C语言函数概述 === http://c.biancheng.net/view/202.html
+*. 有参函数，C语言有参函数详解 === http://c.biancheng.net/view/203.html
+*. 函数的返回值，C语言函数返回值详解 === http://c.biancheng.net/view/204.html
+*. 函数的递归调用，C语言函数递归调用完全攻略 === http://c.biancheng.net/view/205.html
+*. C++ new和delete（C++动态分配和释放内存） === http://c.biancheng.net/view/206.html
+*. 数组名作为函数参数传递，C语言数组作为函数参数传递详解 === http://c.biancheng.net/view/207.html
+*. C++ string（C++字符串）详解 === http://c.biancheng.net/view/208.html
+*. 什么是指针，C语言指针概述 === http://c.biancheng.net/view/211.html
+*. 指针变量及其定义，C语言指针变量定义详解 === http://c.biancheng.net/view/212.html
+*. 指针变量的初始化，C语言指针变量初始化详解 === http://c.biancheng.net/view/214.html
+*. C++类的定义和使用 === http://c.biancheng.net/view/215.html
+*. 指针作为函数参数，C语言指针作为函数参数详解 === http://c.biancheng.net/view/216.html
+*. const关键字及其作用（用法），C语言const详解 === http://c.biancheng.net/view/217.html
+*. const修饰指针的三种效果，C语言const修饰指针详解 === http://c.biancheng.net/view/218.html
+*. C++类成员的访问范围（C++ private、public、protected） === http://c.biancheng.net/view/219.html
+*. 指针与数组的关系，C语言指针和数组的关系详解 === http://c.biancheng.net/view/220.html
+*. 动态内存分配，C语言动态内存分配详解 === http://c.biancheng.net/view/223.html
+*. 多级指针（二级指针），C语言多级指针的用法详解 === http://c.biancheng.net/view/225.html
+*. 二维数组指针表示，C语言指针引用二维数组详解 === http://c.biancheng.net/view/227.html
+*. 函数指针及其定义和用法，C语言函数指针详解 === http://c.biancheng.net/view/228.html
+*. 字符串常量，C语言字符串常量详解 === http://c.biancheng.net/view/229.html
+*. 字符数组及其定义和初始化，C语言字符数组详解 === http://c.biancheng.net/view/230.html
+*. memset函数及其用法，C语言memset函数详解 === http://c.biancheng.net/view/231.html
+*. scanf函数输入字符串，C语言scanf函数输入字符串详解 === http://c.biancheng.net/view/232.html
+*. gets函数，C语言gets函数详解 === http://c.biancheng.net/view/233.html
+*. fgets函数及其用法，C语言fgets函数详解 === http://c.biancheng.net/view/235.html
+*. puts函数，C语言puts函数用法详解 === http://c.biancheng.net/view/237.html
+*. fputs函数，C语言fputs函数及其用法详解 === http://c.biancheng.net/view/238.html
+*. C++实现可变长度的动态数组 === http://c.biancheng.net/view/240.html
+*. 结构体的声明，定义及其初始化，C语言结构体完全攻略 === http://c.biancheng.net/view/241.html
+*. C++重载&lt;&lt;和&gt;&gt;（C++重载输出运算符和输入运算符） === http://c.biancheng.net/view/242.html
+*. 结构体字节对齐，C语言结构体字节对齐详解 === http://c.biancheng.net/view/243.html
+*. 结构体数组及其定义和使用，C语言结构体数组详解 === http://c.biancheng.net/view/245.html
+*. 结构体指针，C语言结构体指针详解 === http://c.biancheng.net/view/246.html
+*. C++重载++和--（自增和自减运算符） === http://c.biancheng.net/view/247.html
+*. C++继承和派生是什么意思（通俗易懂） === http://c.biancheng.net/view/250.html
+*. C++ protected（受保护的）详解 === http://c.biancheng.net/view/252.html
+*. C语言历史，C语言与UNIX系统的关系 === http://c.biancheng.net/view/253.html
+*. 算术运算符及算术表达式，C语言算术运算符及算术表达式详解 === http://c.biancheng.net/view/254.html
+*. C++派生类的构造函数和析构函数 === http://c.biancheng.net/view/255.html
+*. 逻辑运算符及其优先级，C语言逻辑运算符及其优先级详解 === http://c.biancheng.net/view/256.html
+*. 关系运算符及其优先级，C语言关系运算符及其优先级详解 === http://c.biancheng.net/view/257.html
+*. 赋值运算符及赋值表达式，C语言赋值运算符及其赋值表达式详解 === http://c.biancheng.net/view/258.html
+*. C语言自动类型转换和强制类型转换详解 === http://c.biancheng.net/view/261.html
+*. C++多态到底是什么（通俗易懂） === http://c.biancheng.net/view/264.html
+*. C++多态的好处和作用（用实例说话） === http://c.biancheng.net/view/265.html
+*. goto，break和continue语句，C语言goto，break和continue跳转语句详解 === http://c.biancheng.net/view/266.html
+*. C++虚函数表（多态的实现原理） === http://c.biancheng.net/view/267.html
+*. C++虚析构函数详解 === http://c.biancheng.net/view/269.html
+*. 一维字符数组的定义、初始化及引用，C语言一维字符数组详解 === http://c.biancheng.net/view/271.html
+*. 什么是流？C++流类和流对象 === http://c.biancheng.net/view/272.html
+*. 二维字符数组的定义，初始化及引用，C语言二位字符数组详解 === http://c.biancheng.net/view/273.html
+*. C++ cout格式化输出（输出格式）完全攻略 === http://c.biancheng.net/view/275.html
+*. C++ cin判断输入结束（读取结束） === http://c.biancheng.net/view/277.html
+*. cin.ignore()：C++跳过（忽略）指定字符 === http://c.biancheng.net/view/280.html
+*. C语言左值与右值详解 === http://c.biancheng.net/view/281.html
+*. C++文件类（文件流类）有哪些？ === http://c.biancheng.net/view/284.html
+*. C语言运算符优先级 === http://c.biancheng.net/view/285.html
+*. 宏定义（无参宏定义和带参宏定义），C语言宏定义详解 === http://c.biancheng.net/view/287.html
+*. C语言位运算符 === http://c.biancheng.net/view/288.html
+*. 条件编译，C语言条件编译详解 === http://c.biancheng.net/view/289.html
+*. 原码、反码、补码及位操作符，C语言位操作详解 === http://c.biancheng.net/view/290.html
+*. C语言*运算符和&amp;运算符 === http://c.biancheng.net/view/291.html
+*. C语言下标运算符（[]） === http://c.biancheng.net/view/292.html
+*. C语言点运算符和箭头运算符 === http://c.biancheng.net/view/293.html
+*. C语言条件运算符（?:） === http://c.biancheng.net/view/296.html
+*. C语言逗号运算符(，) === http://c.biancheng.net/view/297.html
+*. typedef的用法，C语言typedef详解 === http://c.biancheng.net/view/298.html
+*. C++文本文件的读取和写入 === http://c.biancheng.net/view/299.html
+*. typedef和define区别，C语言typedef和define的区别详解 === http://c.biancheng.net/view/300.html
+*. static变量及其作用，C语言static变量详解 === http://c.biancheng.net/view/301.html
+*. C++二进制文件的读取和写入（精华版） === http://c.biancheng.net/view/302.html
+*. C语言复合语句（语句块） === http://c.biancheng.net/view/303.html
+*. =与==的区别，C语言=与==的区别详解 === http://c.biancheng.net/view/304.html
+*. C语言循环结构（while循环，for循环，do…while循环） === http://c.biancheng.net/view/305.html
+*. |和||的区别，C语言|和||的区别详解 === http://c.biancheng.net/view/306.html
+*. for循环及其注意事项，C语言使用for循环的注意事项总结 === http://c.biancheng.net/view/308.html
+*. switch语句用法注意事项，如何正确使用switch语句 === http://c.biancheng.net/view/310.html
+*. 文件的文本打开方式和二进制打开方式的区别 === http://c.biancheng.net/view/311.html
+*. C语言if语句 === http://c.biancheng.net/view/313.html
+*. IEEE 754浮点数标准详解 === http://c.biancheng.net/view/314.html
+*. C++函数模板（模板函数）详解 === http://c.biancheng.net/view/315.html
+*. C语言switch case 语句 === http://c.biancheng.net/view/316.html
+*. C语言跳转语句（break语句，continue语句，goto语句，return语句） === http://c.biancheng.net/view/318.html
+*. C++类模板（模板类）详解 === http://c.biancheng.net/view/320.html
+*. 什么是函数？以及函数的定义 === http://c.biancheng.net/view/321.html
+*. C++模板类（类模板）与继承 === http://c.biancheng.net/view/324.html
+*. C语言将数组作为函数参数 === http://c.biancheng.net/view/326.html
+*. C语言main()函数 === http://c.biancheng.net/view/328.html
+*. C语言const int *a和int*const a 的区别详解 === http://c.biancheng.net/view/329.html
+*. C++容器（STL容器） === http://c.biancheng.net/view/331.html
+*. C语言函数声明 === http://c.biancheng.net/view/332.html
+*. 数组的存储，C语言数组的存储实质详解 === http://c.biancheng.net/view/333.html
+*. 数组指针和指针数组的区别，C语言数组指针和指针数组区别详解 === http://c.biancheng.net/view/335.html
+*. C语言指针作为参数和返回值 === http://c.biancheng.net/view/336.html
+*. 字符数组和字符串的区别，C语言字符数组和字符串区别详解 === http://c.biancheng.net/view/337.html
+*. C++迭代器（STL迭代器）iterator详解 === http://c.biancheng.net/view/338.html
+*. C语言内联函数 === http://c.biancheng.net/view/339.html
+*. 字符串查找函数，C语言字符串查找函数详解 === http://c.biancheng.net/view/340.html
+*. C语言递归函数 === http://c.biancheng.net/view/341.html
+*. strlen函数与sizeof的区别，C语言strlen与sizeof的区别详解 === http://c.biancheng.net/view/342.html
+*. STL算法详解 === http://c.biancheng.net/view/343.html
+*. C语言可变参数函数 === http://c.biancheng.net/view/344.html
+*. EOF宏，C语言EOF宏详解 === http://c.biancheng.net/view/345.html
+*. STL中“大”、“小”和“相等”的概念 === http://c.biancheng.net/view/346.html
+*. 宏和函数的区别，C语言宏和函数区别详解 === http://c.biancheng.net/view/347.html
+*. C++ vector，STL vector（可变长的动态数组）详解 === http://c.biancheng.net/view/348.html
+*. C语言一维数组的定义 === http://c.biancheng.net/view/349.html
+*. C++ list，STL list（双向链表）详解 === http://c.biancheng.net/view/351.html
+*. 初始化数组，C语言中数组的初始化 === http://c.biancheng.net/view/352.html
+*. C++函数对象详解（附带实例） === http://c.biancheng.net/view/354.html
+*. C语言字符串数组 === http://c.biancheng.net/view/355.html
+*. C语言多维数组，以及多维数组中的二维数组 === http://c.biancheng.net/view/356.html
+*. C语言指针的声明 === http://c.biancheng.net/view/359.html
+*. C语言指针的初始化以及什么是空指针和void指针 === http://c.biancheng.net/view/360.html
+*. 位操作及其使用注意事项，C语言位操作及其使用方法详解 === http://c.biancheng.net/view/362.html
+*. C语言指针的运算 === http://c.biancheng.net/view/363.html
+*. C语言空（null）指针和NULL指针的区别详解 === http://c.biancheng.net/view/364.html
+*. void指针及其应用，C语言void指针及使用注意事项详解 === http://c.biancheng.net/view/365.html
+*. 数组越界及其避免方法，C语言数组越界详解 === http://c.biancheng.net/view/366.html
+*. C语言指针常量和指向常量的指针 === http://c.biancheng.net/view/367.html
+*. C语言数组指针和指针数组 === http://c.biancheng.net/view/368.html
+*. C语言指向函数的指针 === http://c.biancheng.net/view/370.html
+*. 值传递和地址传递，C语言函数传参方式详解 === http://c.biancheng.net/view/371.html
+*. C语言结构类型的定义 === http://c.biancheng.net/view/372.html
+*. printf函数和scanf函数，C语言printf函数和scanf函数详解 === http://c.biancheng.net/view/373.html
+*. C语言联合（union）的定义和初始化 === http://c.biancheng.net/view/375.html
+*. gets和fgets函数及其区别，C语言gets和fgets函数详解 === http://c.biancheng.net/view/379.html
+*. C语言动态内存管理和动态内存分配 === http://c.biancheng.net/view/380.html
+*. feof和ferror函数，C语言feof和ferror函数详解 === http://c.biancheng.net/view/382.html
+*. malloc和free函数使用注意事项，C语言malloc和free使用详解 === http://c.biancheng.net/view/383.html
+*. 内存泄漏的场景分析和避免方法总结，C语言内存泄漏详解 === http://c.biancheng.net/view/385.html
+*. C++ multiset，STL multiset详解 === http://c.biancheng.net/view/386.html
+*. C++ set，STL set详解 === http://c.biancheng.net/view/387.html
+*. C++ map，STL map详解 === http://c.biancheng.net/view/391.html
+*. C++ stack，STL stack详解 === http://c.biancheng.net/view/393.html
+*. fseek、ftell和rewind函数，C语言fseek、ftell和rewind函数详解 === http://c.biancheng.net/view/395.html
+*. fread和fwrite函数，C语言fread和fwrite函数详解 === http://c.biancheng.net/view/399.html
+*. C++ string类（C++字符串）完全攻略 === http://c.biancheng.net/view/400.html
+*. strchr和strrchr函数及用法，C语言strchr和strrchr函数详解 === http://c.biancheng.net/view/401.html
+*. extern关键字，C语言extern关键字用法详解 === http://c.biancheng.net/view/404.html
+*. C++ bitset类详解 === http://c.biancheng.net/view/406.html
+*. C语言文件的打开和关闭，C语言文件操作 === http://c.biancheng.net/view/407.html
+*. C语言格式化输出 === http://c.biancheng.net/view/408.html
+*. C++强制类型转换运算符（static_cast、reinterpret_cast、const_cast和dynamic_cast） === http://c.biancheng.net/view/410.html
+*. C++ array(STL array)的用法及初始化 === http://c.biancheng.net/view/411.html
+*. C++ array获取（访问）元素 === http://c.biancheng.net/view/412.html
+*. C++ array迭代器及用法 === http://c.biancheng.net/view/413.html
+*. C语言格式化输入 === http://c.biancheng.net/view/415.html
+*. C++ vector的使用、创建及初始化 === http://c.biancheng.net/view/416.html
+*. C++ vector容量和大小 === http://c.biancheng.net/view/417.html
+*. C++ vector获取（访问）元素 === http://c.biancheng.net/view/418.html
+*. C++ vector迭代器及用法 === http://c.biancheng.net/view/420.html
+*. C++异常处理（try catch throw）完全攻略 === http://c.biancheng.net/view/422.html
+*. C语言线程和进程 === http://c.biancheng.net/view/423.html
+*. C++ vector添加（增加）元素 === http://c.biancheng.net/view/424.html
+*. C语言创建线程thread_create（） === http://c.biancheng.net/view/425.html
+*. C语言线程函数 === http://c.biancheng.net/view/426.html
+*. C++ vector插入元素(数据)详解 === http://c.biancheng.net/view/427.html
+*. C语言线程互斥和原子操作 === http://c.biancheng.net/view/428.html
+*. C++ vector删除元素（数据）详解 === http://c.biancheng.net/view/429.html
+*. C++11 shared_ptr（智能指针）详解 === http://c.biancheng.net/view/430.html
+*. C++ deque使用、创建及初始化详解 === http://c.biancheng.net/view/432.html
+*. C++11 Lambda表达式（匿名函数）详解 === http://c.biancheng.net/view/433.html
+*. C语言线程间通信 === http://c.biancheng.net/view/434.html
+*. C++ deque修改（替换、更改）元素详解 === http://c.biancheng.net/view/437.html
+*. C++11 auto和decltype关键字 === http://c.biancheng.net/view/438.html
+*. C++11右值引用详解 === http://c.biancheng.net/view/439.html
+*. C++ list(STL list)使用、创建和初始化 === http://c.biancheng.net/view/440.html
+*. C++ list（STL list）增加和插入元素详解（insert成员函数插入元素） === http://c.biancheng.net/view/442.html
+*. C语言#include的用法 === http://c.biancheng.net/view/443.html
+*. C++ list(STL list)删除元素方法详解 === http://c.biancheng.net/view/444.html
+*. C++ list(STL list)排序及合并元素方法详解 === http://c.biancheng.net/view/445.html
+*. C语言宏的定义和宏的使用方法（#define） === http://c.biancheng.net/view/446.html
+*. C++ list（STL list）访问（获取）元素方法详解 === http://c.biancheng.net/view/447.html
+*. C++ forward_list用法详解 === http://c.biancheng.net/view/448.html
+*. C语言条件编译（#if，#ifdef，#ifndef，#endif，#else，#elif） === http://c.biancheng.net/view/449.html
+*. C++自定义迭代器（STL自定义迭代器)的实现详解 === http://c.biancheng.net/view/471.html
+*. C++ stack(STL stack)用法详解 === http://c.biancheng.net/view/478.html
+*. C++ queue(STL queue)用法详解 === http://c.biancheng.net/view/479.html
+*. C++ priority_queue(STL priority_queue)用法详解 === http://c.biancheng.net/view/480.html
+*. C++ map的创建（STL map的创建）详解 === http://c.biancheng.net/view/491.html
+*. C语言九九乘法表（五种输出形式） === http://c.biancheng.net/view/494.html
+*. C语言杨辉三角（两种方法） === http://c.biancheng.net/view/495.html
+*. C++ map插入数据（STL map插入数据）详解 === http://c.biancheng.net/view/496.html
+*. C语言求圆周率π（三种方法） === http://c.biancheng.net/view/497.html
+*. C语言判断素数（求素数）（两种方法） === http://c.biancheng.net/view/498.html
+*. C语言输出菱形（详解版） === http://c.biancheng.net/view/499.html
+*. C语言百钱买百鸡问题（详解版） === http://c.biancheng.net/view/500.html
+*. C语言求完数（完全数）（详解版） === http://c.biancheng.net/view/501.html
+*. C语言水仙花数（详解版） === http://c.biancheng.net/view/504.html
+*. C语言求回文数（详解版） === http://c.biancheng.net/view/505.html
+*. C语言求最大公约数（详解版） === http://c.biancheng.net/view/507.html
+*. C++ map（STL map）构造元素（emplace和emplace_hint函数）详解 === http://c.biancheng.net/view/508.html
+*. C语言求最小公倍数（详解版） === http://c.biancheng.net/view/509.html
+*. C语言三个数从小到大排序/输出 === http://c.biancheng.net/view/510.html
+*. C语言猴子吃桃问题 === http://c.biancheng.net/view/511.html
+*. C++ map（STL map）删除元素（erase函数删除元素）详解 === http://c.biancheng.net/view/513.html
+*. C语言百钱买百鸡（百钱百鸡，百鸡问题） === http://c.biancheng.net/view/515.html
+*. C语言渔夫打鱼晒网问题 === http://c.biancheng.net/view/516.html
+*. C++ multimap(STL multimap)的使用详解 === http://c.biancheng.net/view/518.html
+*. vi工作模式（3种）以及模式切换（转换） === http://c.biancheng.net/view/519.html
+*. 进入vi编辑器（vi打开文件） === http://c.biancheng.net/view/521.html
+*. C语言希尔排序算法 === http://c.biancheng.net/view/522.html
+*. C++ hash(STL hash)及其函数模板用法详解 === http://c.biancheng.net/view/523.html
+*. C语言冒泡排序算法 === http://c.biancheng.net/view/524.html
+*. C语言直接插入排序算法 === http://c.biancheng.net/view/525.html
+*. C++ unordered_map初始化详解 === http://c.biancheng.net/view/527.html
+*. C语言快速排序算法 === http://c.biancheng.net/view/528.html
+*. C语言选择排序算法 === http://c.biancheng.net/view/531.html
+*. C语言二分查找算法，折半查找算法 === http://c.biancheng.net/view/536.html
+*. C++ set初始化（STL set初始化）详解 === http://c.biancheng.net/view/537.html
+*. C++ set添加、删除和访问(STL set添加、删除和访问)元素详解 === http://c.biancheng.net/view/538.html
+*. C++ set用法（STL set用法）详解 === http://c.biancheng.net/view/539.html
+*. C语言分块查找算法，索引顺序查找算法 === http://c.biancheng.net/view/540.html
+*. C++ multiset用法详解（附带完整示例） === http://c.biancheng.net/view/545.html
+*. C++ unordered_set定义及初始化详解 === http://c.biancheng.net/view/546.html
+*. vi修改文件内容（文本修改命令） === http://c.biancheng.net/view/547.html
+*. C++ unordered_set查找元素（find查找元素）详解 === http://c.biancheng.net/view/549.html
+*. vi文本删除命令（删除文件内容） === http://c.biancheng.net/view/550.html
+*. C语言求n的阶乘（n!） === http://c.biancheng.net/view/551.html
+*. C语言判断三角形的类型 === http://c.biancheng.net/view/554.html
+*. vi文本复制命令（复制文件内容） === http://c.biancheng.net/view/555.html
+*. vi撤销命令（u和U），撤销上一次的操作 === http://c.biancheng.net/view/558.html
+*. C语言水仙花数，阿姆斯特朗数 === http://c.biancheng.net/view/559.html
+*. C++ sort（STL sort）排序算法详解 === http://c.biancheng.net/view/561.html
+*. C语言最大公约数和最小公倍数 === http://c.biancheng.net/view/562.html
+*. C语言求自然底数e，求自然对数的底e === http://c.biancheng.net/view/565.html
+*. C语言小写转大写，小写字母转换成大写字母 === http://c.biancheng.net/view/569.html
+*. C++ find（STL find）查找算法详解 === http://c.biancheng.net/view/570.html
+*. C++ find_if（STL find_if）查找算法详解 === http://c.biancheng.net/view/571.html
+*. C语言求回文素数 === http://c.biancheng.net/view/574.html
+*. C语言判断闰年，即判断年份是否为闰年 === http://c.biancheng.net/view/575.html
+*. C语言矩阵转置 === http://c.biancheng.net/view/579.html
+*. C语言兔子生兔子问题 === http://c.biancheng.net/view/583.html
+*. C语言统计单词个数，单词个数算法 === http://c.biancheng.net/view/596.html
+*. C语言字符串加密和解密算法 === http://c.biancheng.net/view/599.html
+*. C语言输出等腰三角形 === http://c.biancheng.net/view/603.html
+*. C语言汉诺塔问题，用C语言实现汉诺塔 === http://c.biancheng.net/view/604.html
+*. C语言整数逆序输出 === http://c.biancheng.net/view/610.html
+*. vi退出命令 === http://c.biancheng.net/view/615.html
+*. vi字符串检索（查找）命令 === http://c.biancheng.net/view/636.html
+*. GCC编译C语言程序完整演示 === http://c.biancheng.net/view/660.html
+*. GCC分步骤编译C语言程序 === http://c.biancheng.net/view/661.html
+*. GCC编译流程 === http://c.biancheng.net/view/663.html
+*. GCC常用选项 === http://c.biancheng.net/view/664.html
+*. GCC -c选项：只编译不链接，仅生成目标文件 === http://c.biancheng.net/view/666.html
+*. C++ accumulate函数用法详解 === http://c.biancheng.net/view/682.html
+*. C++ complex复数类用法详解 === http://c.biancheng.net/view/703.html
+*. U盘安装Linux系统 === http://c.biancheng.net/view/715.html
+*. dd命令安装Linux === http://c.biancheng.net/view/716.html
+*. Shell提示符：#和$ === http://c.biancheng.net/view/734.html
+*. Linux ln命令：在文件之间建立链接（硬链接和软链接）详解版 === http://c.biancheng.net/view/740.html
+*. Java输出九九乘法表 === http://c.biancheng.net/view/748.html
+*. Linux文件权限（所有者，所属组）及含义详解 === http://c.biancheng.net/view/752.html
+*. Linux读写执行权限（-r、-w、-x）的真正含义 === http://c.biancheng.net/view/757.html
+*. Shell变量的作用域：Shell全局变量、环境变量和局部变量 === http://c.biancheng.net/view/773.html
+*. Linux find命令：在目录中查找文件（超详解） === http://c.biancheng.net/view/779.html
+*. Linux tar压缩命令：打包与解打包命令 === http://c.biancheng.net/view/788.html
+*. Linux关机和重启命令（超详解） === http://c.biancheng.net/view/793.html
+*. linux netstat命令：网络状态查看命令 === http://c.biancheng.net/view/800.html
+*. Shell $*和$@的区别 === http://c.biancheng.net/view/807.html
+*. Linux Vim显示行号方法详解 === http://c.biancheng.net/view/809.html
+*. Linux yum源搭建及配置（新手必看） === http://c.biancheng.net/view/824.html
+*. Java分割字符串（spilt()） === http://c.biancheng.net/view/833.html
+*. Java StringBuffer替换特殊字符 === http://c.biancheng.net/view/855.html
+*. Linux ACL访问控制权限完全攻略（超详细） === http://c.biancheng.net/view/863.html
+*. Java正则表达式验证IP地址 === http://c.biancheng.net/view/865.html
+*. Linux文件系统详解 === http://c.biancheng.net/view/880.html
+*. Linux swap分区及作用详解 === http://c.biancheng.net/view/907.html
+*. Java二维数组详解：二维数组的声明和初始化，以及获取二维数组的值 === http://c.biancheng.net/view/916.html
+*. Shell脚本是什么 === http://c.biancheng.net/view/932.html
+*. Linux echo详解：输出命令 === http://c.biancheng.net/view/934.html
+*. Shell history详解：查看历史命令 === http://c.biancheng.net/view/936.html
+*. Shell（Bash）单引号、双引号和反引号用法详解 === http://c.biancheng.net/view/951.html
+*. Shell（Bash）变量及定义规范 === http://c.biancheng.net/view/955.html
+*. Shell环境变量设置方法详解 === http://c.biancheng.net/view/960.html
+*. Linux LANG变量设置：定义系统的主语系环境 === http://c.biancheng.net/view/964.html
+*. Java final修饰符：final修饰属性、final修饰方法及final修饰类 === http://c.biancheng.net/view/970.html
+*. Shell数值运算方法（3种） === http://c.biancheng.net/view/971.html
+*. Shell printf格式化输出命令 === http://c.biancheng.net/view/991.html
+*. Shell awk命令详解（格式+使用方法） === http://c.biancheng.net/view/992.html
+*. shell sed命令详解：选取、替换、删除、新増数据 === http://c.biancheng.net/view/994.html
+*. Shell if条件判断语句用法详解 === http://c.biancheng.net/view/1002.html
+*. Shell case语句（多分支条件判断） === http://c.biancheng.net/view/1003.html
+*. Shell for循环及用法举例 === http://c.biancheng.net/view/1005.html
+*. Java中的异常（Exception）：什么是异常？异常产生的原因及常见的几种异常类型 === http://c.biancheng.net/view/1038.html
+*. Linux单用户模式（修改密码、运行级别）方法详解 === http://c.biancheng.net/view/1041.html
+*. Java try catch语句 === http://c.biancheng.net/view/1044.html
+*. Java声明和抛出异常：throws声明异常、throw抛出异常、throw和throws的区别 === http://c.biancheng.net/view/1049.html
+*. Java Map集合详解 === http://c.biancheng.net/view/1067.html
+*. Java线程的概念：什么是线程？ === http://c.biancheng.net/view/1157.html
+*. Java sleep方法的作用（sleep()） === http://c.biancheng.net/view/1174.html
+*. 进程是什么，进程和程序的区别 === http://c.biancheng.net/view/1179.html
+*. Java停止（终止）线程详解版 === http://c.biancheng.net/view/1186.html
+*. 进程的创建和终止（超详细） === http://c.biancheng.net/view/1207.html
+*. 进程间通信（IPC）：共享内存和消息队列原理详解 === http://c.biancheng.net/view/1208.html
+*. 信号量及其使用和实现(超详细) === http://c.biancheng.net/view/1232.html
+*. 什么是死锁，死锁的原因及解决办法（含四个必要条件） === http://c.biancheng.net/view/1236.html
+*. 先来先服务调度（FCFS）算法及优缺点 === http://c.biancheng.net/view/1242.html
+*. 最短作业优先（SJF）调度算法（详解版） === http://c.biancheng.net/view/1244.html
+*. 时间片轮转（RR）调度算法（详解版） === http://c.biancheng.net/view/1247.html
+*. 什么是Web标准（网页标准） === http://c.biancheng.net/view/1274.html
+*. 浏览器对CSS3的支持（CSS3浏览器兼容性一览表） === http://c.biancheng.net/view/1281.html
+*. 什么是文件，文件（属性、操作、类型及结构）详解 === http://c.biancheng.net/view/1297.html
+*. HTML导入外部样式表（HTML导入CSS文件） === http://c.biancheng.net/view/1300.html
+*. CSS注释 === http://c.biancheng.net/view/1301.html
+*. Java如何创建项目 === http://c.biancheng.net/view/1303.html
+*. C++ cout输出语句用法详解 === http://c.biancheng.net/view/1308.html
+*. C++ int，short，long（详解版） === http://c.biancheng.net/view/1318.html
+*. C++ double和float（浮点类型）详解 === http://c.biancheng.net/view/1321.html
+*. C++ char数据类型（详解版） === http://c.biancheng.net/view/1323.html
+*. C++ pow（指数函数）：求x的y次幂的值 === http://c.biancheng.net/view/1328.html
+*. C++数据类型（强制）转换详解 === http://c.biancheng.net/view/1329.html
+*. c++ setprecision用法详解 === http://c.biancheng.net/view/1340.html
+*. C++ fixed用法详解 === http://c.biancheng.net/view/1341.html
+*. C++ getline函数用法详解 === http://c.biancheng.net/view/1345.html
+*. C++ cin.get用法（详解版） === http://c.biancheng.net/view/1346.html
+*. C++ cin.getline用法详解 === http://c.biancheng.net/view/1350.html
+*. C++随机数（rand和srand）函数用法详解 === http://c.biancheng.net/view/1352.html
+*. C++ if else详解 === http://c.biancheng.net/view/1355.html
+*. C++ &amp;&amp;、||、！逻辑运算符用法详解 === http://c.biancheng.net/view/1360.html
+*. C++ ?:条件运算符(三目运算符)用法详解 === http://c.biancheng.net/view/1363.html
+*. C++ switch case详解 === http://c.biancheng.net/view/1365.html
+*. C++ enum枚举用法攻略（超详细） === http://c.biancheng.net/view/1367.html
+*. C++ while（do-while）循环详解 === http://c.biancheng.net/view/1368.html
+*. C++ for循环详解 === http://c.biancheng.net/view/1372.html
+*. C++ break和continue用法详解 === http://c.biancheng.net/view/1375.html
+*. C++函数定义和调用过程（超详细） === http://c.biancheng.net/view/1377.html
+*. C++局部变量和全局变量（详解版） === http://c.biancheng.net/view/1384.html
+*. C++函数默认参数（详解版） === http://c.biancheng.net/view/1386.html
+*. C++函数引用传递（超详细） === http://c.biancheng.net/view/1387.html
+*. C++ exit用法详解 === http://c.biancheng.net/view/1391.html
+*. C++类对象的创建和使用（详解版） === http://c.biancheng.net/view/1398.html
+*. C++类成员函数定义方法详解 === http://c.biancheng.net/view/1399.html
+*. C++结构体完全攻略（超详细） === http://c.biancheng.net/view/1407.html
+*. C++数组及其使用方法完全攻略 === http://c.biancheng.net/view/1414.html
+*. C++数组初始化方法详解 === http://c.biancheng.net/view/1415.html
+*. C++比较两个数组是否相等（详解版） === http://c.biancheng.net/view/1418.html
+*. C++求数组中的最大值和最小值（带源码） === http://c.biancheng.net/view/1420.html
+*. JSP注释（多种注释详解） === http://c.biancheng.net/view/1422.html
+*. C++二维数组完全攻略 === http://c.biancheng.net/view/1423.html
+*. C++结构体数组（无师自通） === http://c.biancheng.net/view/1432.html
+*. C++ basic_string（字符串类模板）详解 === http://c.biancheng.net/view/1439.html
+*. C++ string类成员函数汇总（超全） === http://c.biancheng.net/view/1441.html
+*. C++ string构造函数和析构函数详解 === http://c.biancheng.net/view/1443.html
+*. C++获取字符串长度详解 === http://c.biancheng.net/view/1444.html
+*. C++ string获取字符串元素：[]和at() === http://c.biancheng.net/view/1446.html
+*. C++ string字符串比较方法详解 === http://c.biancheng.net/view/1447.html
+*. C++ string字符串修改和替换方法详解 === http://c.biancheng.net/view/1449.html
+*. C++字符串输入输出操作详解 === http://c.biancheng.net/view/1450.html
+*. C++字符串查找函数详解 === http://c.biancheng.net/view/1453.html
+*. C++指针作为函数参数（详解版） === http://c.biancheng.net/view/1475.html
+*. C++友元函数（超详细） === http://c.biancheng.net/view/1489.html
+*. .csf播放器下载（CSF Codec和ScenicPlayer下载） === http://c.biancheng.net/view/1491.html
+*. .pit视频播放器（播布客视频播放器） === http://c.biancheng.net/view/1496.html
+*. True Speech声音解码器下载 === http://c.biancheng.net/view/1501.html
+*. C++字符串和数字转换完全攻略 === http://c.biancheng.net/view/1527.html
+*. C++ get函数用法完全攻略 === http://c.biancheng.net/view/1534.html
+*. C++ seekg函数用法详解 === http://c.biancheng.net/view/1537.html
+*. C++二进制文件读写（read和write）详解 === http://c.biancheng.net/view/1538.html
+*. C++ seekp和seekg函数用法详解 === http://c.biancheng.net/view/1541.html
+*. C++阶乘函数（递归）详解 === http://c.biancheng.net/view/1547.html
+*. C++斐波那契数列（递归实现） === http://c.biancheng.net/view/1549.html
+*. C++汉诺塔递归算法完全攻略 === http://c.biancheng.net/view/1556.html
+*. C++函数模板声明和实现 === http://c.biancheng.net/view/1565.html
+*. C++ swap函数模板及其用法 === http://c.biancheng.net/view/1566.html
+*. C++链表及其创建 === http://c.biancheng.net/view/1570.html
+*. C语言入门书籍推荐，小白自学经典（免费下载） === http://c.biancheng.net/view/1674.html
+*. Qt界面布局管理详解 === http://c.biancheng.net/view/1822.html
+*. Qt信号与槽机制详解 === http://c.biancheng.net/view/1823.html
+*. Qt QComboBox下拉框及用法（详解版） === http://c.biancheng.net/view/1849.html
+*. Qt QPlainTextEdit用法详解 === http://c.biancheng.net/view/1852.html
+*. Qt QTableWidget及基本操作（详解版） === http://c.biancheng.net/view/1863.html
+*. Qt QStandardItemModel用法（超级详细） === http://c.biancheng.net/view/1869.html
+*. Qt 5种标准对话框及使用方法详解 === http://c.biancheng.net/view/1870.html
+*. 挖矿是什么意思？矿工都做了什么？ === http://c.biancheng.net/view/1898.html
+*. 以太坊是什么？为什么说它是区块链2.0的代表 === http://c.biancheng.net/view/1913.html
+*. V神是谁？他是以太坊创始人，是区块链界的真正大佬 === http://c.biancheng.net/view/1915.html
+*. 卷积神经网络(CNN,ConvNet)及其原理详解 === http://c.biancheng.net/view/1928.html
+*. 主成分分析法（PCA）原理和步骤（超级详细） === http://c.biancheng.net/view/1951.html
+*. EOS是什么？EOS和比特币、以太坊有什么区别？ === http://c.biancheng.net/view/1956.html
+*. Python爬虫入门教程：超级简单的Python爬虫教程 === http://c.biancheng.net/view/2011.html
+*. Python Scrapy中文教程，Scrapy框架快速入门！ === http://c.biancheng.net/view/2027.html
+*. WSAStartup()函数以及DLL的加载 === http://c.biancheng.net/view/2130.html
+*. Python变量命名规则（超级详细） === http://c.biancheng.net/view/2172.html
+*. Python字符串及基本操作（入门必看） === http://c.biancheng.net/view/2174.html
+*. Python字典及基本操作（超级详细） === http://c.biancheng.net/view/2212.html
+*. Python列表推导式（for表达式）及用法 === http://c.biancheng.net/view/2231.html
+*. Python函数参数传递机制（超级详细） === http://c.biancheng.net/view/2258.html
+*. Python class定义类，Python类的定义（入门必读） === http://c.biancheng.net/view/2263.html
+*. Python try except else（异常处理）用法详解 === http://c.biancheng.net/view/2315.html
+*. gethostbyname()函数：通过域名获取IP地址 === http://c.biancheng.net/view/2357.html
+*. GCC -E选项：生成预处理文件 === http://c.biancheng.net/view/2375.html
+*. MySQL安装教程，包含所有平台（图解） === http://c.biancheng.net/view/2376.html
+*. GCC -S选项：生成汇编文件 === http://c.biancheng.net/view/2377.html
+*. 如何判断MySQL是否安装成功 === http://c.biancheng.net/view/2383.html
+*. MySQL的版本以及版本号 === http://c.biancheng.net/view/2389.html
+*. MySQL修改数据表（ALTER TABLE语句） === http://c.biancheng.net/view/2433.html
+*. MySQL DISTINCT：去重（过滤重复数据） === http://c.biancheng.net/view/2551.html
+*. Python写入文件（write和writelines）详解 === http://c.biancheng.net/view/2556.html
+*. MySQL ORDER BY：对查询结果进行排序 === http://c.biancheng.net/view/2557.html
+*. MySQL WHERE：条件查询 === http://c.biancheng.net/view/2559.html
+*. MySQL INNER JOIN：内连接查询 === http://c.biancheng.net/view/2563.html
+*. MySQL自定义函数（CREATE FUNCTION） === http://c.biancheng.net/view/2590.html
+*. Python创建线程（2种方式）详解 === http://c.biancheng.net/view/2603.html
+*. Python Thread join()用法详解 === http://c.biancheng.net/view/2609.html
+*. Python sleep()函数用法：线程睡眠 === http://c.biancheng.net/view/2612.html
+*. MySQL删除用户（DROP USER） === http://c.biancheng.net/view/2613.html
+*. MySQL用户授权（GRANT） === http://c.biancheng.net/view/2615.html
+*. Python 线程安全（同步锁Lock）详解 === http://c.biancheng.net/view/2617.html
+*. 什么是死锁，如何避免死锁（4种方法） === http://c.biancheng.net/view/2620.html
+*. MySQL Workbench使用教程 === http://c.biancheng.net/view/2625.html
+*. Python线程池及其原理和使用（超级详细） === http://c.biancheng.net/view/2627.html
+*. Python Timer定时器：控制函数在特定时间执行 === http://c.biancheng.net/view/2629.html
+*. Python Process创建进程（2种方法）详解 === http://c.biancheng.net/view/2632.html
+*. Shell $[]：对整数进行数学计算 === http://c.biancheng.net/view/2671.html
+*. Shell expr命令：进行整数计算 === http://c.biancheng.net/view/2672.html
+*. Python PyInstaller安装和使用教程（详解版） === http://c.biancheng.net/view/2690.html
+*. C#运算符 === http://c.biancheng.net/view/2781.html
+*. C# switch case语句 === http://c.biancheng.net/view/2796.html
+*. C# goto语句 === http://c.biancheng.net/view/2803.html
+*. C# get和set访问器：获取和设置字段（属性）的值 === http://c.biancheng.net/view/2809.html
+*. C#正则表达式（Regex类） === http://c.biancheng.net/view/2846.html
+*. C# foreach循环用法详解 === http://c.biancheng.net/view/2851.html
+*. Shell函数返回值（return关键字） === http://c.biancheng.net/view/2863.html
+*. C# TextBox：文本框控件 === http://c.biancheng.net/view/2955.html
+*. C# ListBox：列表框控件 === http://c.biancheng.net/view/2962.html
+*. C# ComboBox：组合框控件 === http://c.biancheng.net/view/2963.html
+*. Android五大布局：FrameLayout、LinearLayout、AbsoluteLayout、RelativeLayout和TableLayout === http://c.biancheng.net/view/2976.html
+*. Android Spinner：下拉列表控件 === http://c.biancheng.net/view/3006.html
+*. C# Connection：连接数据库 === http://c.biancheng.net/view/3010.html
+*. C# Command：操作数据库 === http://c.biancheng.net/view/3017.html
+*. C# DataReader：读取查询结果 === http://c.biancheng.net/view/3022.html
+*. Vim配置文件（.vimrc），Vim配置教程 === http://c.biancheng.net/view/3024.html
+*. C# DataSet和DataTable：将查询结果保存到DataSet或DataTable中 === http://c.biancheng.net/view/3026.html
+*. C# DataRow和DataColumn：更新数据表 === http://c.biancheng.net/view/3028.html
+*. C# DataGridView：数据表格控件数据绑定 === http://c.biancheng.net/view/3037.html
+*. C# 数据表格（DataGridView）控件的应用案例 === http://c.biancheng.net/view/3040.html
+*. Shell四种运行方式（启动方式） === http://c.biancheng.net/view/3045.html
+*. Android多窗口模式（分屏模式） === http://c.biancheng.net/view/3055.html
+*. Linux文件描述符到底是什么？ === http://c.biancheng.net/view/3066.html
+*. Windows安装Docker（图解教程） === http://c.biancheng.net/view/3121.html
+*. Mac OS安装Docker（图解教程） === http://c.biancheng.net/view/3122.html
+*. Linux安装Docker（详解版） === http://c.biancheng.net/view/3124.html
+*. Docker引擎（engine）详解 === http://c.biancheng.net/view/3137.html
+*. Docker镜像（image）详解 === http://c.biancheng.net/view/3143.html
+*. Docker容器（container）详解 === http://c.biancheng.net/view/3150.html
+*. Docker应用容器化（将应用程序部署到容器中） === http://c.biancheng.net/view/3159.html
+*. Docker Compose是什么 === http://c.biancheng.net/view/3170.html
+*. WIFI Direct（WIFI直连）是什么？ === http://c.biancheng.net/view/3190.html
+*. HTML DOM是什么 === http://c.biancheng.net/view/3274.html
+*. UserAgent（浏览器UA标识）是什么 === http://c.biancheng.net/view/3286.html
+*. HTML CSS JS之间的关系 === http://c.biancheng.net/view/3288.html
+*. HTTP请求头（Header）参数简介 === http://c.biancheng.net/view/3293.html
+*. Linux挂载光盘（使用mount命令） === http://c.biancheng.net/view/3327.html
+*. 算法时间复杂度和空间复杂度 === http://c.biancheng.net/view/3332.html
+*. 汇编语言指令详解 === http://c.biancheng.net/view/3468.html
+*. 汇编语言EQU伪指令 === http://c.biancheng.net/view/3481.html
+*. 汇编语言MOV指令：将源操作数复制到目的操作数 === http://c.biancheng.net/view/3493.html
+*. 汇编语言OFFSET运算符：返回数据标号的偏移量 === http://c.biancheng.net/view/3514.html
+*. 汇编语言PUSH和POP指令（压栈和出栈） === http://c.biancheng.net/view/3534.html
+*. 汇编语言CALL和RET指令：调用一个过程 === http://c.biancheng.net/view/3537.html
+*. 汇编语言AND指令：对两个操作数进行逻辑（按位）与操作 === http://c.biancheng.net/view/3553.html
+*. 汇编语言OR指令：对两个操作数进行逻辑（按位）或操作 === http://c.biancheng.net/view/3554.html
+*. 汇编语言XOR指令：对两个操作数进行逻辑（按位）异或操作 === http://c.biancheng.net/view/3558.html
+*. 汇编语言NOT（反码）指令：翻转操作数的所有位 === http://c.biancheng.net/view/3559.html
+*. 汇编语言TEST指令：对两个操作数进行逻辑（按位）与操作 === http://c.biancheng.net/view/3560.html
+*. 汇编语言CMP（比较）指令：比较整数 === http://c.biancheng.net/view/3561.html
+*. 汇编语言条件跳转指令汇总 === http://c.biancheng.net/view/3567.html
+*. 汇编语言SHL（左移）指令：将操作数逻辑左移一位 === http://c.biancheng.net/view/3590.html
+*. 汇编语言SHR（右移）指令：将操作数逻辑右移一位 === http://c.biancheng.net/view/3591.html
+*. 汇编语言SAL（算术左移）和SAR（算术右移）指令：将操作数左/右移一位 === http://c.biancheng.net/view/3592.html
+*. 汇编语言ROL（循环左移）指令：将操作数所有位都向左移 === http://c.biancheng.net/view/3593.html
+*. 汇编语言ROR（循环右移）指令：将操作数所有位都向右移 === http://c.biancheng.net/view/3595.html
+*. 汇编语言RCL（带进位循环左移）和RCR（带进位循环右移）指令 === http://c.biancheng.net/view/3596.html
+*. 汇编语言MUL指令：无符号数乘法 === http://c.biancheng.net/view/3602.html
+*. 汇编语言IMUL指令：有符号数乘法 === http://c.biancheng.net/view/3603.html
+*. 汇编语言DIV指令：无符号除法 === http://c.biancheng.net/view/3606.html
+*. 汇编语言ADC指令：带进位加法 === http://c.biancheng.net/view/3611.html
+*. Linux绝对路径和相对路径 === http://c.biancheng.net/view/3613.html
+*. Linux挂载U盘（使用mount命令） === http://c.biancheng.net/view/3670.html
+*. C++ auto（类型推导）精讲 === http://c.biancheng.net/view/3718.html
+*. C++返回值类型后置（跟踪返回值类型） === http://c.biancheng.net/view/3727.html
+*. C++11使用using定义别名（替代typedef） === http://c.biancheng.net/view/3730.html
+*. C++11支持函数模板的默认模板参数 === http://c.biancheng.net/view/3734.html
+*. C++11列表初始化（统一了初始化方式） === http://c.biancheng.net/view/3737.html
+*. C++11 lambda表达式精讲 === http://c.biancheng.net/view/3741.html
+*. IaaS、PaaS和SaaS：云计算的三种服务模式（精讲） === http://c.biancheng.net/view/3787.html
+*. 云计算IaaS服务模式精讲 === http://c.biancheng.net/view/3788.html
+*. 常用数据库有哪些（附带数据库排名）？ === http://c.biancheng.net/view/3856.html
+*. 什么是中间件？常见中间件有哪些？ === http://c.biancheng.net/view/3860.html
+*. OpenStack是什么？ === http://c.biancheng.net/view/3892.html
+*. VDI（远程桌面）是什么？ === http://c.biancheng.net/view/3896.html
+*. SOA（面向服务的架构）是什么？ === http://c.biancheng.net/view/3909.html
+*. HttpServletRequest详解：获取HTTP请求消息 === http://c.biancheng.net/view/4008.html
+*. HttpServletResponse详解：封装HTTP响应消息 === http://c.biancheng.net/view/4014.html
+*. response.sendRedirect()实现重定向（页面跳转） === http://c.biancheng.net/view/4015.html
+*. Debug和Release的区别是什么（非常详细）？ === http://c.biancheng.net/view/4124.html
+*. python不是内部或外部命令的解决方法 === http://c.biancheng.net/view/4171.html
+*. Spring DI（依赖注入）的实现方式：属性注入和构造注入 === http://c.biancheng.net/view/4253.html
+*. Spring Bean的生命周期 === http://c.biancheng.net/view/4261.html
+*. Spring AOP（面向切面编程）是什么？ === http://c.biancheng.net/view/4268.html
+*. MyBatis的工作原理 === http://c.biancheng.net/view/4304.html
+*. MyBatis执行SQL的两种方式：SqlSession和Mapper接口 === http://c.biancheng.net/view/4327.html
+*. Python元组和列表的区别 === http://c.biancheng.net/view/4363.html
+*. MyBatis中的insert、update、delete和sql标签 === http://c.biancheng.net/view/4364.html
+*. MyBatis动态sql之if标签：条件判断 === http://c.biancheng.net/view/4375.html
+*. Python dict字典keys()、values()和items()方法 === http://c.biancheng.net/view/4384.html
+*. Python dict字典update()方法 === http://c.biancheng.net/view/4386.html
+*. Spring MVC中@Controller和@RequestMapping注解详解 === http://c.biancheng.net/view/4397.html
+*. Spring MVC拦截器（Interceptor）的配置及使用 === http://c.biancheng.net/view/4431.html
+*. SSM（Spring+Spring MVC+MyBatis）框架整合搭建详细步骤 === http://c.biancheng.net/view/4497.html
+*. Redis watch命令——监控事务 === http://c.biancheng.net/view/4544.html
+*. Python @property装饰器详解 === http://c.biancheng.net/view/4561.html
+*. 微服务（Microservice）是什么？为什么会出现微服务？ === http://c.biancheng.net/view/4615.html
+*. SpringBoot是什么？SpringBoot的优缺点有哪些？ === http://c.biancheng.net/view/4630.html
+*. Python __name__=='__main__'作用详解 === http://c.biancheng.net/view/4643.html
+*. C语言经典视频教程汇总，看了无师自通（共18套） === http://c.biancheng.net/view/4674.html
+*. C++经典视频教程汇总，从入门到精通 === http://c.biancheng.net/view/4681.html
+*. Java format()方法：格式化字符串 === http://c.biancheng.net/view/4700.html
+*. Java isEmpty()方法：判断字符串是否为空 === http://c.biancheng.net/view/4703.html
+*. Linux视频教程汇总（出自各大培训机构） === http://c.biancheng.net/view/4712.html
+*. Java List.add()方法：向集合列表中添加对象 === http://c.biancheng.net/view/4724.html
+*. Java List.addAll()方法：添加所有元素到列表中 === http://c.biancheng.net/view/4727.html
+*. 计算机基础视频教程汇总（包括操作系统、计算机组成原理等） === http://c.biancheng.net/view/4728.html
+*. 数据结构与算法视频教程汇总 === http://c.biancheng.net/view/4729.html
+*. Java List.contains()方法：判断列表中是否包含指定元素 === http://c.biancheng.net/view/4731.html
+*. Java List.get()方法：获取列表指定位置的元素 === http://c.biancheng.net/view/4732.html
+*. Java List.isEmpty()方法：判断集合对象是否为空 === http://c.biancheng.net/view/4734.html
+*. Java List.remove()方法：移出列表中的指定元素 === http://c.biancheng.net/view/4737.html
+*. Java List.removeAll()方法：从列表中移除所有元素 === http://c.biancheng.net/view/4738.html
+*. Java List.size()方法：返回列表中元素的个数 === http://c.biancheng.net/view/4742.html
+*. Java List.subList()方法：获取列表中指定范围的子列表 === http://c.biancheng.net/view/4743.html
+*. Java Map.containsKey()方法：判断Map集合对象中是否包含指定的键名 === http://c.biancheng.net/view/4745.html
+*. Java Map.get()方法：返回指定键所映射的值 === http://c.biancheng.net/view/4748.html
+*. Java Map.isEmpty()方法：判断Map集合对象是否包含内容 === http://c.biancheng.net/view/4749.html
+*. Java Map.keySet()方法：获取Map集合的所有键名 === http://c.biancheng.net/view/4750.html
+*. Java Map.put()方法：获取Map集合的所有键名 === http://c.biancheng.net/view/4751.html
+*. Java Map.values()方法：获取Map集合中的所有键值对象 === http://c.biancheng.net/view/4753.html
+*. Java Set.contains()方法：判断Set集合是否包含指定的对象 === http://c.biancheng.net/view/4755.html
+*. Java Set.remove()方法：移除Set集合中的指定对象 === http://c.biancheng.net/view/4759.html
+*. Go语言依赖管理 === http://c.biancheng.net/view/4774.html
+*. Java DriverManager.getConnection()方法：获取数据库连接 === http://c.biancheng.net/view/4789.html
+*. Java ResultSet.getString()方法：获取String类型的数据 === http://c.biancheng.net/view/4798.html
+*. GPG（GnuPG）的安装和使用 === http://c.biancheng.net/view/4832.html
+*. JSP Request.getServerName()方法：获取服务器的名字 === http://c.biancheng.net/view/4924.html
+*. Python os.remove()函数：删除文件 === http://c.biancheng.net/view/4935.html
+*. Python os.rename()函数：重命名文件或目录 === http://c.biancheng.net/view/4943.html
+*. JSP JSTL &lt;c:if&gt;标签：条件判断标签 === http://c.biancheng.net/view/4984.html
+*. Python进程和线程（包含两者区别） === http://c.biancheng.net/view/5068.html
+*. Go语言strconv包：字符串和数值类型的相互转换 === http://c.biancheng.net/view/5112.html
+*. Spring Cloud和Dubbo的区别及各自的优缺点 === http://c.biancheng.net/view/5310.html
+*. Spring Boot项目搭建步骤（超详细） === http://c.biancheng.net/view/5316.html
+*. JavaScript转义字符 === http://c.biancheng.net/view/5385.html
+*. JS &amp;&amp;（与运算）详解 === http://c.biancheng.net/view/5452.html
+*. JS判断相等或者不等于（==、===、!=、!==）运算符 === http://c.biancheng.net/view/5461.html
+*. JS &amp;、|、^和~（逻辑位运算符） === http://c.biancheng.net/view/5469.html
+*. JS移位运算符（&lt;&lt;、&gt;&gt;和&gt;&gt;&gt;） === http://c.biancheng.net/view/5471.html
+*. JS条件运算符（?:）详解 === http://c.biancheng.net/view/5475.html
+*. JS void运算符 === http://c.biancheng.net/view/5479.html
+*. Spring Boot Admin的介绍及使用 === http://c.biancheng.net/view/5509.html
+*. JS while和do while循环语句 === http://c.biancheng.net/view/5512.html
+*. Swagger是什么？Swagger怎么用？ === http://c.biancheng.net/view/5532.html
+*. Python GIL全局解释器锁详解（深度剖析） === http://c.biancheng.net/view/5537.html
+*. JS获取字符串长度（length属性） === http://c.biancheng.net/view/5547.html
+*. Go语言WEB框架(Gin)详解 === http://c.biancheng.net/view/5574.html
+*. JS字符串拼接/连接（3种方式） === http://c.biancheng.net/view/5579.html
+*. JS字符串查找（6种方法） === http://c.biancheng.net/view/5581.html
+*. JS截取字符串（3种方法） === http://c.biancheng.net/view/5587.html
+*. JS字符串和数组之间的转换 === http://c.biancheng.net/view/5596.html
+*. JS去除字符串前后空格 === http://c.biancheng.net/view/5598.html
+*. JS Unicode编码和解码（6种方法） === http://c.biancheng.net/view/5602.html
+*. Python range()快速初始化数字列表 === http://c.biancheng.net/view/5617.html
+*. JS正则表达式语法大全（非常详细） === http://c.biancheng.net/view/5632.html
+*. JS获取数组长度（length属性） === http://c.biancheng.net/view/5660.html
+*. JS截取数组：使用splice()和slice()方法 === http://c.biancheng.net/view/5668.html
+*. JS数组排序：使用reverse()和sort()方法 === http://c.biancheng.net/view/5669.html
+*. JS遍历数组（for in和forEach循环） === http://c.biancheng.net/view/5671.html
+*. JS数组转字符串（3种方法） === http://c.biancheng.net/view/5673.html
+*. JS判断是否是数组：使用isArray()方法 === http://c.biancheng.net/view/5676.html
+*. JS every()方法：检测数组元素是否全部符合指定条件 === http://c.biancheng.net/view/5677.html
+*. JS函数调用（4种方法） === http://c.biancheng.net/view/5700.html
+*. JS函数返回值和return关键字 === http://c.biancheng.net/view/5701.html
+*. Go语言make和new关键字的区别及实现原理 === http://c.biancheng.net/view/5722.html
+*. JS操作对象属性（获取、添加、删除、修改对象属性） === http://c.biancheng.net/view/5773.html
+*. JS实现倒计时功能 === http://c.biancheng.net/view/5798.html
+*. Visual Studio运行Python程序（超级详细） === http://c.biancheng.net/view/5824.html
+*. VS Code运行Python程序 === http://c.biancheng.net/view/5827.html
+*. JS window对象详解 === http://c.biancheng.net/view/5832.html
+*. JS window.open()打开新窗口（非常详细） === http://c.biancheng.net/view/5845.html
+*. Java数组和字符串的相互转换 === http://c.biancheng.net/view/5872.html
+*. Linux PATH环境变量及作用（初学者必读） === http://c.biancheng.net/view/5876.html
+*. Python requests使用教程（简明版） === http://c.biancheng.net/view/5895.html
+*. JS appendChild()和insertBefore()方法：插入新节点 === http://c.biancheng.net/view/5899.html
+*. JS removeChild()方法：删除节点 === http://c.biancheng.net/view/5900.html
+*. C语言贪吃蛇小游戏演示和说明 === http://c.biancheng.net/view/5904.html
+*. C语言2048小游戏演示和说明 === http://c.biancheng.net/view/5906.html
+*. C语言推箱子小游戏演示和说明 === http://c.biancheng.net/view/5909.html
+*. C语言扫雷小游戏演示和说明 === http://c.biancheng.net/view/5911.html
+*. C语言学生信息管理系统演示和说明（文件版） === http://c.biancheng.net/view/5916.html
+*. C语言学生信息管理系统演示和说明（数据结构版） === http://c.biancheng.net/view/5918.html
+*. C语言学生信息管理系统演示和说明（密码版） === http://c.biancheng.net/view/5921.html
+*. JS setAttribute()方法：设置元素的属性值 === http://c.biancheng.net/view/5924.html
+*. JS removeAttribute()方法：删除元素的某个属性 === http://c.biancheng.net/view/5925.html
+*. JS addEventListener()和attachEvent()方法：注册事件 === http://c.biancheng.net/view/5940.html
+*. JS鼠标事件（非常详细） === http://c.biancheng.net/view/5944.html
+*. JS键盘事件（非常详细） === http://c.biancheng.net/view/5955.html
+*. Linux重定向（输入输出重定向）详解 === http://c.biancheng.net/view/5956.html
+*. JS mousemove事件：鼠标移动事件 === http://c.biancheng.net/view/5958.html
+*. JS获取鼠标位置（鼠标坐标） === http://c.biancheng.net/view/5960.html
+*. JS onload事件：页面完全加载完毕 === http://c.biancheng.net/view/5962.html
+*. JS resize事件：窗口重置 === http://c.biancheng.net/view/5966.html
+*. JS scroll事件：页面滚动 === http://c.biancheng.net/view/5967.html
+*. JS XMLHttpRequest入门教程（非常详细） === http://c.biancheng.net/view/5995.html
+*. JS获取元素的大小（高度和宽度） === http://c.biancheng.net/view/6028.html
+*. JS scrollTo()方法：设置滚动条位置 === http://c.biancheng.net/view/6033.html
+*. Linux命令行自动补全功能详解（实例演示） === http://c.biancheng.net/view/6037.html
+*. PHP while和do while循环 === http://c.biancheng.net/view/6122.html
+*. PHP break和continue语句 === http://c.biancheng.net/view/6123.html
+*. PHP switch case语句 === http://c.biancheng.net/view/6126.html
+*. PHP for循环 === http://c.biancheng.net/view/6127.html
+*. PHP foreach循环 === http://c.biancheng.net/view/6128.html
+*. PHP return关键字（函数返回值） === http://c.biancheng.net/view/6132.html
+*. PHP字符串拼接（连接） === http://c.biancheng.net/view/6138.html
+*. PHP字符串查找（4个函数） === http://c.biancheng.net/view/6140.html
+*. PHP字符串替换 === http://c.biancheng.net/view/6141.html
+*. PHP substr()：截取字符串 === http://c.biancheng.net/view/6142.html
+*. PHP explode()：字符串转数组 === http://c.biancheng.net/view/6148.html
+*. PHP二维数组和多维数组 === http://c.biancheng.net/view/6154.html
+*. PHP implode()：数组转字符串 === http://c.biancheng.net/view/6156.html
+*. PHP array_rand()：随机获取数组元素 === http://c.biancheng.net/view/6161.html
+*. PHP array_merge()：数组合并 === http://c.biancheng.net/view/6174.html
+*. PHP array_unshift()：在数组开头插入元素 === http://c.biancheng.net/view/6175.html
+*. PHP array_slice()：截取数组的一部分 === http://c.biancheng.net/view/6179.html
+*. PHP is_array()：判断是否为数组 === http://c.biancheng.net/view/6181.html
+*. PHP array_sum()：计算数组中所有元素的和 === http://c.biancheng.net/view/6182.html
+*. PHP array_flip()：交换数组中的键和值 === http://c.biancheng.net/view/6184.html
+*. PHP $_SERVER详解 === http://c.biancheng.net/view/6185.html
+*. PHP $_FILES详解 === http://c.biancheng.net/view/6187.html
+*. PHP设置时区 === http://c.biancheng.net/view/6199.html
+*. PHP获取当前时间（5种方式） === http://c.biancheng.net/view/6206.html
+*. PHP static：静态方法和属性 === http://c.biancheng.net/view/6222.html
+*. PHP array_keys()：获得数组中的键名 === http://c.biancheng.net/view/6227.html
+*. PHP array_values()：获取数组中所有元素的值 === http://c.biancheng.net/view/6228.html
+*. PHP array_search()：在数组中搜索给定的值并返回键名或索引 === http://c.biancheng.net/view/6229.html
+*. PHP interface：接口 === http://c.biancheng.net/view/6233.html
+*. PHP clone关键字（克隆对象） === http://c.biancheng.net/view/6235.html
+*. PHP instanceof：判断对象是否属于某个类 === http://c.biancheng.net/view/6236.html
+*. PHP preg_match()：执行正则表达式匹配 === http://c.biancheng.net/view/6246.html
+*. PHP preg_split()：使用正则表达式分割字符串 === http://c.biancheng.net/view/6251.html
+*. PHP getimagesize()：获取图像大小 === http://c.biancheng.net/view/6259.html
+*. Linux查看内存使用情况方法汇总 === http://c.biancheng.net/view/6269.html
+*. PHP array_fill()：以填充数据的方式创建新数组 === http://c.biancheng.net/view/6272.html
+*. Linux查看硬盘读写情况（汇总版） === http://c.biancheng.net/view/6287.html
+*. Wireshark下载安装和使用教程 === http://c.biancheng.net/view/6379.html
+*. 物理地址（MAC地址）是什么？ === http://c.biancheng.net/view/6382.html
+*. ARP报文格式详解 === http://c.biancheng.net/view/6389.html
+*. 以太网数据帧格式（结构）图解 === http://c.biancheng.net/view/6391.html
+*. IP地址的格式和分类 === http://c.biancheng.net/view/6407.html
+*. IP数据报格式详解 === http://c.biancheng.net/view/6411.html
+*. TCP三次握手建立连接的过程 === http://c.biancheng.net/view/6425.html
+*. UDP报文格式详解 === http://c.biancheng.net/view/6440.html
+*. TCP报文格式解析 === http://c.biancheng.net/view/6441.html
+*. IP地址分配（静态分配+动态分配+零配置） === http://c.biancheng.net/view/6449.html
+*. DNS报文格式解析（非常详细） === http://c.biancheng.net/view/6457.html
+*. SNMP协议是什么？ === http://c.biancheng.net/view/6467.html
+*. FTP的基本使用（非常详细） === http://c.biancheng.net/view/6483.html
+*. 冒泡排序算法（超级详细） === http://c.biancheng.net/view/6506.html
+*. HBase创建表（create命令） === http://c.biancheng.net/view/6530.html
+*. HBase put命令：插入数据 === http://c.biancheng.net/view/6534.html
+*. HBase scan命令：查询全表数据 === http://c.biancheng.net/view/6537.html
+*. TiDB数据库是什么？ === http://c.biancheng.net/view/6582.html
+*. OceanBase数据库入门教程 === http://c.biancheng.net/view/6588.html
+*. 物联网是什么？它的应用领域有哪些？ === http://c.biancheng.net/view/6709.html
+*. Vue.js是什么？它有什么特点？ === http://c.biancheng.net/view/6714.html
+*. C++ vector（STL vector）底层实现机制（通俗易懂） === http://c.biancheng.net/view/6901.html
+*. C++ STL deque容器底层实现原理（深度剖析） === http://c.biancheng.net/view/6908.html
+*. SEO网页标题（title）该怎么写？ === http://c.biancheng.net/view/6921.html
+*. SEO网页描述（description）该怎么写？ === http://c.biancheng.net/view/6923.html
+*. C++ STL list容器底层实现（详解版） === http://c.biancheng.net/view/6955.html
+*. C++ auto类型推导完全攻略 === http://c.biancheng.net/view/6984.html
+*. 常用数据库大汇总（附带优缺点） === http://c.biancheng.net/view/7109.html
+*. C++ decltype类型推导完全攻略 === http://c.biancheng.net/view/7151.html
+*. MySQL忘记root密码解决方案 === http://c.biancheng.net/view/7156.html
+*. C++ auto和decltype的区别 === http://c.biancheng.net/view/7158.html
+*. C++11非受限联合体（union） === http://c.biancheng.net/view/7165.html
+*. GCC创建和使用静态链接库（.a文件） === http://c.biancheng.net/view/7168.html
+*. 静态网页与动态网页的区别 === http://c.biancheng.net/view/7186.html
+*. C++ STL map删除键值对：erase()和clear()方法 === http://c.biancheng.net/view/7187.html
+*. NumPy ndarray数组元素的获取 === http://c.biancheng.net/view/7206.html
+*. NumPy ndarray合并数组 === http://c.biancheng.net/view/7209.html
+*. C++ STL无序容器底层实现原理（深度剖析） === http://c.biancheng.net/view/7235.html
+*. 机器学习、深度学习和人工智能三者的关系 === http://c.biancheng.net/view/7239.html
+*. PHP标记（4种风格） === http://c.biancheng.net/view/7256.html
+*. PHP注释：单行注释+多行注释 === http://c.biancheng.net/view/7264.html
+*. MySQL事务隔离级别详解（附带实例） === http://c.biancheng.net/view/7265.html
+*. MySQL查看和修改事务隔离级别 === http://c.biancheng.net/view/7266.html
+*. PHP三元运算符 === http://c.biancheng.net/view/7271.html
+*. PHP运算符优先级一览表 === http://c.biancheng.net/view/7272.html
+*. PHP foreach遍历数组 === http://c.biancheng.net/view/7281.html
+*. Django是什么？ === http://c.biancheng.net/view/7284.html
+*. PHP函数参数传递的四种方式 === http://c.biancheng.net/view/7287.html
+*. Django MTV和MVC的区别 === http://c.biancheng.net/view/7288.html
+*. MySQL设置事务自动提交（开启和关闭） === http://c.biancheng.net/view/7291.html
+*. Django ORM模块精讲 === http://c.biancheng.net/view/7293.html
+*. Django auth应用模块 === http://c.biancheng.net/view/7308.html
+*. Django Admin后台管理系统 === http://c.biancheng.net/view/7334.html
+*. Django视图函数 === http://c.biancheng.net/view/7347.html
+*. Django模板系统 === http://c.biancheng.net/view/7369.html
+*. URL是什么 === http://c.biancheng.net/view/7374.html
+*. Django路由系统精讲 === http://c.biancheng.net/view/7375.html
+*. Django中间件 === http://c.biancheng.net/view/7379.html
+*. Django Cache缓存系统 === http://c.biancheng.net/view/7383.html
+*. PHP strlen()与mb_strlen()：获取字符串长度 === http://c.biancheng.net/view/7412.html
+*. 搭建Django开发环境 === http://c.biancheng.net/view/7451.html
+*. Django安装与配置教程（图解） === http://c.biancheng.net/view/7455.html
+*. Django创建第一个项目 === http://c.biancheng.net/view/7458.html
+*. HTML表格（table标签） === http://c.biancheng.net/view/7459.html
+*. 如何启动Django项目详解 === http://c.biancheng.net/view/7467.html
+*. PHP time()：获取当前时间戳 === http://c.biancheng.net/view/7468.html
+*. settings.py配置文件详解 === http://c.biancheng.net/view/7475.html
+*. 如何配置settings.py文件 === http://c.biancheng.net/view/7484.html
+*. Django初始化项目环境精讲 === http://c.biancheng.net/view/7487.html
+*. PHP class：定义类 === http://c.biancheng.net/view/7492.html
+*. PHP new：实例化对象 === http://c.biancheng.net/view/7497.html
+*. PHP __construct()：构造函数/方法 === http://c.biancheng.net/view/7501.html
+*. PHP __destruct()：析构函数/方法 === http://c.biancheng.net/view/7504.html
+*. Django项目创建第一个应用 === http://c.biancheng.net/view/7505.html
+*. Django ORM进阶应用 === http://c.biancheng.net/view/7512.html
+*. Django Admin数据表可视化 === http://c.biancheng.net/view/7523.html
+*. Django模板加载与响应 === http://c.biancheng.net/view/7525.html
+*. HTML &lt;a&gt;标签（超链接） === http://c.biancheng.net/view/7529.html
+*. URL结构解析 === http://c.biancheng.net/view/7530.html
+*. HTML块级元素及行内元素 === http://c.biancheng.net/view/7533.html
+*. HTML有序列表+无序列表+定义列表 === http://c.biancheng.net/view/7534.html
+*. HTML锚点链接 === http://c.biancheng.net/view/7546.html
+*. Django模板变量精讲 === http://c.biancheng.net/view/7547.html
+*. 主流嵌入式操作系统有哪些？ === http://c.biancheng.net/view/7557.html
+*. Django if标签详解 === http://c.biancheng.net/view/7561.html
+*. Django for标签详解 === http://c.biancheng.net/view/7562.html
+*. HTML &lt;meta&gt;标签 === http://c.biancheng.net/view/7568.html
+*. PHP正则表达式，看这一篇就够了 === http://c.biancheng.net/view/7569.html
+*. C++输入输出重定向（3种方法） === http://c.biancheng.net/view/7572.html
+*. HTML &lt;input&gt;标签 === http://c.biancheng.net/view/7574.html
+*. HTML单行文本框 === http://c.biancheng.net/view/7577.html
+*. Django模板过滤器用法详解 === http://c.biancheng.net/view/7580.html
+*. HTML密码框 === http://c.biancheng.net/view/7581.html
+*. Django url标签详解 === http://c.biancheng.net/view/7582.html
+*. HTML单选按钮 === http://c.biancheng.net/view/7588.html
+*. IntelliJ IDEA下载安装教程（图解） === http://c.biancheng.net/view/7592.html
+*. HTML复选框 === http://c.biancheng.net/view/7597.html
+*. Django实现自定义标签 === http://c.biancheng.net/view/7598.html
+*. Django模板标签完整攻略 === http://c.biancheng.net/view/7599.html
+*. Django模板继承精讲 === http://c.biancheng.net/view/7601.html
+*. HTML &lt;textarea&gt;标签（文本域） === http://c.biancheng.net/view/7610.html
+*. HTML &lt;select&gt;标签（下拉列表） === http://c.biancheng.net/view/7613.html
+*. Django自定义过滤器 === http://c.biancheng.net/view/7620.html
+*. HTML按钮 === http://c.biancheng.net/view/7622.html
+*. HTML图像按钮 === http://c.biancheng.net/view/7623.html
+*. Django路由反向解析与命名空间 === http://c.biancheng.net/view/7632.html
+*. Django路由Path方法 === http://c.biancheng.net/view/7633.html
+*. Django Meta元数据类属性解析 === http://c.biancheng.net/view/7639.html
+*. Django Model三种继承模型详解 === http://c.biancheng.net/view/7640.html
+*. Django查询数据库操作详解（一） === http://c.biancheng.net/view/7641.html
+*. Django实现数据表数据插入（创建Model实例） === http://c.biancheng.net/view/7642.html
+*. Django数据表关联关系映射（一对一、一对多、多对多） === http://c.biancheng.net/view/7645.html
+*. Django F对象和Q对象查询详解 === http://c.biancheng.net/view/7693.html
+*. Django聚合查询和分组查询 === http://c.biancheng.net/view/7694.html
+*. Django数据库操作API详解（二） === http://c.biancheng.net/view/7695.html
+*. Django存在关联关系的反向查询 === http://c.biancheng.net/view/7701.html
+*. Django QuerySet查询API攻略 === http://c.biancheng.net/view/7704.html
+*. C++ 11是什么，C++ 11标准的由来 === http://c.biancheng.net/view/7751.html
+*. Django Admin优化后台展示 === http://c.biancheng.net/view/7753.html
+*. C++11 for循环（基于范围的循环）详解 === http://c.biancheng.net/view/7759.html
+*. Django的FBV与CBV模式 === http://c.biancheng.net/view/7763.html
+*. Django表单系统初体验 === http://c.biancheng.net/view/7765.html
+*. Python正则表达式详解 === http://c.biancheng.net/view/7768.html
+*. C++ Boost库是什么？ === http://c.biancheng.net/view/7771.html
+*. IoT是什么意思？ === http://c.biancheng.net/view/7773.html
+*. C++11 constexpr：验证是否为常量表达式（长篇神文） === http://c.biancheng.net/view/7781.html
+*. Python while循环及用法详解 === http://c.biancheng.net/view/7786.html
+*. Electron是什么？ === http://c.biancheng.net/view/7790.html
+*. C++11 constexpr和const的区别详解 === http://c.biancheng.net/view/7807.html
+*. C++11 long long超长整形详解 === http://c.biancheng.net/view/7809.html
+*. C++11 lambda匿名函数用法详解 === http://c.biancheng.net/view/7818.html
+*. Python模块是什么（超级详细） === http://c.biancheng.net/view/7822.html
+*. Django中Cookie和Session介绍（一） === http://c.biancheng.net/view/7828.html
+*. C++11右值引用（一看即懂） === http://c.biancheng.net/view/7829.html
+*. Django HTML表单实现用户注册 === http://c.biancheng.net/view/7830.html
+*. Django HTML表单实现用户登录退出（含源码） === http://c.biancheng.net/view/7831.html
+*. Django Form表单API详解 === http://c.biancheng.net/view/7832.html
+*. Django CBV基类View源码解析 === http://c.biancheng.net/view/7833.html
+*. Django QueryDict对象 === http://c.biancheng.net/view/7834.html
+*. Django Form表单Field属性与方法 === http://c.biancheng.net/view/7835.html
+*. Django中Cookie和Session介绍（二） === http://c.biancheng.net/view/7837.html
+*. jQuery下载和安装 === http://c.biancheng.net/view/7841.html
+*. C++11移动构造函数详解 === http://c.biancheng.net/view/7847.html
+*. C++11 move()函数：将左值强制转换为右值 === http://c.biancheng.net/view/7863.html
+*. C++11完美转发及实现方法详解 === http://c.biancheng.net/view/7868.html
+*. C++11 nullptr：初始化空指针 === http://c.biancheng.net/view/7887.html
+*. Django HTML表单实例应用 === http://c.biancheng.net/view/7895.html
+*. MySQL索引类型详解 === http://c.biancheng.net/view/7897.html
+*. C++11 shared_ptr智能指针（超级详细） === http://c.biancheng.net/view/7898.html
+*. Anaconda下载和安装教程（图解） === http://c.biancheng.net/view/7900.html
+*. Django项目实例详解(一) === http://c.biancheng.net/view/7903.html
+*. C++11 unique_ptr智能指针详解 === http://c.biancheng.net/view/7909.html
+*. Django Form表单内置字段详解 === http://c.biancheng.net/view/7912.html
+*. C++11 weak_ptr智能指针（一看即懂） === http://c.biancheng.net/view/7918.html
+*. Django Form表单完整使用流程 === http://c.biancheng.net/view/7928.html
+*. Django项目实例详解(二) === http://c.biancheng.net/view/7950.html
+*. Django Form表单实现自定义字段 === http://c.biancheng.net/view/7952.html
+*. Django Form表单自定义验证规则 === http://c.biancheng.net/view/7973.html
+*. Django Form基于Model定义表单 === http://c.biancheng.net/view/7985.html
+*. Django ModelForm用法详解 === http://c.biancheng.net/view/7991.html
+*. Django Auth用户与用户组详述 === http://c.biancheng.net/view/8001.html
+*. Django Auth应用实现用户身份认证 === http://c.biancheng.net/view/8002.html
+*. Django用户认证系统权限管理 === http://c.biancheng.net/view/8003.html
+*. Django表单系统工作原理详述 === http://c.biancheng.net/view/8004.html
+*. Django权限管理自定义以及权限校验 === http://c.biancheng.net/view/8038.html
+*. Django自定义认证后端实现多种登录方式验证 === http://c.biancheng.net/view/8045.html
+*. Django实现分页功能 === http://c.biancheng.net/view/8046.html
+*. Django实现邮件的发送（含源码） === http://c.biancheng.net/view/8047.html
+*. Django模板中校验用户身份与权限 === http://c.biancheng.net/view/8056.html
+*. extern &quot;C&quot;：实现C++和C的混合编程 === http://c.biancheng.net/view/8064.html
+*. 关于C语言中文网 === http://c.biancheng.net/view/8066.html
+*. Django Auth应用定义登录视图的方式 === http://c.biancheng.net/view/8067.html
+*. Django Auth装饰器验证用户身份与权限 === http://c.biancheng.net/view/8075.html
+*. MinGW下载和安装教程 === http://c.biancheng.net/view/8077.html
+*. 关于站长 === http://c.biancheng.net/view/8092.html
+*. 联系我们 === http://c.biancheng.net/view/8093.html
+*. Sublime Text运行C和C++程序 === http://c.biancheng.net/view/8094.html
+*. 如何才能完成一部教程 === http://c.biancheng.net/view/8097.html
+*. 单链表反转详解（4种算法实现） === http://c.biancheng.net/view/8105.html
+*. VS Code运行C和C++程序 === http://c.biancheng.net/view/8114.html
+*. 主流Java Web开发框架有哪些？ === http://c.biancheng.net/view/8115.html
+*. 主流Java ORM框架有哪些？ === http://c.biancheng.net/view/8117.html
+*. Django文件上传与CSV文件下载 === http://c.biancheng.net/view/8120.html
+*. Django中的缓存机制及其实现方法 === http://c.biancheng.net/view/8134.html
+*. Django自定义中间件及其实例应用 === http://c.biancheng.net/view/8137.html
+*. 简述Django的信号机制 === http://c.biancheng.net/view/8138.html
+*. Django信号机制执行过程及其应用 === http://c.biancheng.net/view/8139.html
+*. Django信号机制工作原理 === http://c.biancheng.net/view/8140.html
+*. JSON和JS对象的相互转换 === http://c.biancheng.net/view/8151.html
+*. JS生成随机数（random()函数） === http://c.biancheng.net/view/8184.html
+*. 单元测试是什么？ === http://c.biancheng.net/view/8185.html
+*. Python unittest模块实现单元测试 === http://c.biancheng.net/view/8186.html
+*. Django项目编写单元测试用例 === http://c.biancheng.net/view/8193.html
+*. JS字符串截取（3种方法） === http://c.biancheng.net/view/8198.html
+*. JS split()分割字符串 === http://c.biancheng.net/view/8200.html
+*. Django unittest测试框架特性简述 === http://c.biancheng.net/view/8207.html
+*. 单元测试数据库配置及常用测试工具 === http://c.biancheng.net/view/8208.html
+*. Django项目部署搭建uWSGI工作环境 === http://c.biancheng.net/view/8224.html
+*. JS获取子节点（子元素） === http://c.biancheng.net/view/8226.html
+*. GDB print命令高级用法 === http://c.biancheng.net/view/8252.html
+*. Django项目部署流程与Nginx安装配置（超详细） === http://c.biancheng.net/view/8256.html
+*. SQL注入是什么，如何避免SQL注入？ === http://c.biancheng.net/view/8283.html
+*. MySQL UPDATE多表关联更新 === http://c.biancheng.net/view/8286.html
+*. Windows平台安装GDB调试器 === http://c.biancheng.net/view/8296.html
+*. PHP视频教程汇总，从入门到精通 === http://c.biancheng.net/view/8531.html
+*. Python视频教程汇总，从入门到精通（共12套） === http://c.biancheng.net/view/8533.html
+*. Java经典视频教程汇总，从入门到精通 === http://c.biancheng.net/view/8534.html
+*. C++11引用限定符的用法 === http://c.biancheng.net/view/8598.html
+*. C++11 tuple元组详解 === http://c.biancheng.net/view/8600.html
+*. pthread_create()函数：创建线程 === http://c.biancheng.net/view/8607.html
+*. pthread_exit()函数：终止线程 === http://c.biancheng.net/view/8608.html
+*. 动辄一两万的编程培训班是不是骗人的？能不能参加？ === http://c.biancheng.net/view/8623.html
+*. pthread_join()函数：等待线程执行结束 === http://c.biancheng.net/view/8628.html
+*. pthread_cancel()函数：终止线程执行 === http://c.biancheng.net/view/8629.html
+*. Linux线程同步详解 === http://c.biancheng.net/view/8630.html
+*. Linux Mutex互斥锁详解 === http://c.biancheng.net/view/8631.html
+*. Linux信号量详解 === http://c.biancheng.net/view/8632.html
+*. Linux条件变量详解 === http://c.biancheng.net/view/8633.html
+*. Linux读写锁详解 === http://c.biancheng.net/view/8635.html
+*. Linux线程死锁详解 === http://c.biancheng.net/view/8636.html
+*. Linux线程属性详解 === http://c.biancheng.net/view/8637.html
+*. C++11多线程编程详解 === http://c.biancheng.net/view/8638.html
+*. VS2017 Pthreads多线程库配置教程 === http://c.biancheng.net/view/8639.html
+*. 计算机二级证书到底有没有用？需要报考吗？ === http://c.biancheng.net/view/8640.html
+*. 线程终止执行的三种方法（Linux） === http://c.biancheng.net/view/8641.html
+*. C语言的主要用途以及未来发展 === http://c.biancheng.net/view/8776.html
+*. 动态语言、静态语言、强类型语言、弱类型语言的区别 === http://c.biancheng.net/view/8803.html
+*. CDN加速是什么？它是如何工作的？ === http://c.biancheng.net/view/9021.html
+*. 程序员结识新朋友的10个理由 === http://c.biancheng.net/view/9022.html
+*. 软文写作技巧汇总（7条） === http://c.biancheng.net/view/9023.html
+*. Java可以做什么？9种Java实际用途汇总 === http://c.biancheng.net/view/9024.html
+*. Linux多线程编程（10分钟入门） === http://c.biancheng.net/view/9025.html
+*. Qt控件和事件 === http://c.biancheng.net/view/9413.html
+*. Qt信号和槽机制详解 === http://c.biancheng.net/view/9414.html
+*. Qt QLabel文本框的使用 === http://c.biancheng.net/view/9415.html
+*. Qt QPushButton按钮用法详解 === http://c.biancheng.net/view/9416.html
+*. Qt QLineEdit单行输入框用法详解 === http://c.biancheng.net/view/9417.html
+*. Qt QListWidget列表框用法详解 === http://c.biancheng.net/view/9418.html
+*. Qt QTableWidget表格控件的用法（非常详细） === http://c.biancheng.net/view/9419.html
+*. Qt QTreeWidget树形控件用法详解 === http://c.biancheng.net/view/9420.html
+*. Qt QMessageBox用法详解 === http://c.biancheng.net/view/9421.html
+*. Qt布局管理详解（5种布局控件） === http://c.biancheng.net/view/9422.html
+*. Qt QVBoxLayout垂直布局（超级详细） === http://c.biancheng.net/view/9423.html
+*. Qt QHBoxLayout水平布局用法详解 === http://c.biancheng.net/view/9424.html
+*. Qt QGridLayout网格布局详解 === http://c.biancheng.net/view/9425.html
+*. Qt QFormLayout表单布局的用法（超级详细） === http://c.biancheng.net/view/9426.html
+*. Qt QStackedLayout布局用法详解 === http://c.biancheng.net/view/9427.html
+*. Qt pro文件详解 === http://c.biancheng.net/view/9428.html
+*. Qt自定义信号和槽函数 === http://c.biancheng.net/view/9429.html
+*. Qt QFile文件操作详解 === http://c.biancheng.net/view/9430.html
+*. Qt实现学生信息管理系统 === http://c.biancheng.net/view/9431.html
+*. Qt打包程序详解（适用于Windows平台） === http://c.biancheng.net/view/9432.html
+*. 程序员职业发展路线图（完整版+珍藏版） === http://c.biancheng.net/view/9434.html
+*. 初学者避坑指南：如何选择编程语言和开发方向（非常详细） === http://c.biancheng.net/view/9435.html
+*. 什么是个人品牌？如何打造个人品牌？ === http://c.biancheng.net/view/9436.html
+*. 如何长期输出优质内容？我是如何做到的？ === http://c.biancheng.net/view/9437.html
+*. 程序员离职会给公司带来多大的伤害？答案超出你的预料 === http://c.biancheng.net/view/9438.html
+*. 程序员跳槽的最佳时机是什么？ === http://c.biancheng.net/view/9439.html
+*. 程序员离职原因汇总（非常详细） === http://c.biancheng.net/view/9440.html
+*. 面向对象究竟是什么鬼？该如何理解？ === http://c.biancheng.net/view/9442.html
+*. 很多编程书籍都是垃圾，大家一定要擦亮眼睛，不要被误导 === http://c.biancheng.net/view/9443.html
+*. 初学者如何找到适合自己的编程书籍？ === http://c.biancheng.net/view/9445.html
+*. 我的大学为何挂科严重，甚至差点被劝退 === http://c.biancheng.net/view/9446.html
+*. 技术NB的程序员就一定工资高吗？ === http://c.biancheng.net/view/9448.html
+*. Dev C++调试程序方法详解 === http://c.biancheng.net/view/9451.html
+*. Code::Blocks调试程序方法详解 === http://c.biancheng.net/view/9452.html
+*. SaaS模式到底是什么？ === http://c.biancheng.net/view/9480.html
+*. 剖析程序员中年危机的深层原因（4000字长文） === http://c.biancheng.net/view/9481.html
+*. 大学是最好的学习时间，错过了悔恨终生 === http://c.biancheng.net/view/9482.html
+*. 应届毕业生啥都不会，可以去公司学习和成长吗？ === http://c.biancheng.net/view/9483.html
+*. 大学生不要为了赚钱而兼职，没有什么卵用！ === http://c.biancheng.net/view/9484.html
+*. 大公司VS小公司，应届生应该如何选择？ === http://c.biancheng.net/view/9485.html
+*. 并发和并行的区别（图解） === http://c.biancheng.net/view/9486.html
+*. IP地址和Mac地址的区别 === http://c.biancheng.net/view/9487.html
+*. 如何从零打造一个流量百万的网站？ === http://c.biancheng.net/view/9488.html
+*. 创业7年，我最遗憾的事情是什么？ === http://c.biancheng.net/view/9489.html
+*. 大厂卡学历吗？普通大学能进吗？ === http://c.biancheng.net/view/9562.html
+*. 剑指大厂：小白入职大厂完全攻略，很肝~ === http://c.biancheng.net/view/9563.html
+*. 没有项目经验，能找到工作吗？能进大厂吗？ === http://c.biancheng.net/view/9618.html
+*. Java到底能干什么？实事求是地说一下 === http://c.biancheng.net/view/9619.html
+*. 大三/大四有必要去实习吗？ === http://c.biancheng.net/view/9620.html
+*. 面试中HR反问「你还有什么问题吗」该如何回答？ === http://c.biancheng.net/view/9621.html
+*. 曝光一下阿里的工资待遇和职位级别 === http://c.biancheng.net/view/9622.html
+*. 某大厂码农说：拓展社交圈子只需要4个字 === http://c.biancheng.net/view/9623.html
+*. 曝光一下字节跳动的工资待遇和职位级别 === http://c.biancheng.net/view/9624.html
+*. 预防裁员，科普一下N+1和2N补偿机制 === http://c.biancheng.net/view/9625.html
+*. C/C++学习路线之Windows软件开发（非常详细） === http://c.biancheng.net/view/9626.html
+*. 推荐一套yyds的Java学习资料（非常经典） === http://c.biancheng.net/view/9641.html
+*. 尼玛，又被割韭菜了... === http://c.biancheng.net/view/9642.html
+*. 大厂打工VS自由职业，哪个更香？ === http://c.biancheng.net/view/9643.html
+*. 为什么中国的996干不过美国的955？ === http://c.biancheng.net/view/9644.html
+*. 曝光一下腾讯的工资待遇和职位级别 === http://c.biancheng.net/view/9645.html
+*. 科普一下大厂的工资结构 === http://c.biancheng.net/view/9646.html
+*. 5分钟了解汽车操作系统（科普篇） === http://c.biancheng.net/view/9647.html
+*. 官方公众号 === http://c.biancheng.net/view/9648.html
+*. 中国一共有多少IP地址？ === http://c.biancheng.net/view/9649.html
+*. 谈一谈国产操作系统的困局 === http://c.biancheng.net/view/9650.html
+*. 手机上运行Python程序 === http://c.biancheng.net/view/9756.html
+*. Jupyter Notebook：科学计算领域必备的Python IDE === http://c.biancheng.net/view/9759.html

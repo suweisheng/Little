@@ -152,6 +152,11 @@ def get_month_begin0(ts=None):
     t = time.localtime(ts)
     return time.mktime([t[0], t[1], 1, 0, 0, 0, t[6], t[7], t[8]])
 
+def get_year_begin0(ts=None):
+    ts = ts if ts else time_second()
+    t = time.localtime(ts)
+    return time.mktime([t[0], 1, 1, 0, 0, 0, t[6], t[7], t[8]])
+
 def get_next_day_begin0(ts=None):
     return get_day_begin0(ts) + one_day
 
@@ -180,4 +185,5 @@ def date_to_ts(time_str):
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+    print format_time(get_year_begin0())
