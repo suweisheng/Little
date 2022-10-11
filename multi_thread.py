@@ -369,8 +369,7 @@ def test_process_share2():
 
 
 def mul_thread():
-    pass
-    # test_process_share2()
+    test_process_share2()
     # time.sleep(10)
 
     # start_time = time.time()

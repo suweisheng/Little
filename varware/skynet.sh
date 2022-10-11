@@ -7,7 +7,6 @@ if [ ! -f /root/skynet ]; then
     1)
         # 远程服务器导入
         git clone https://github.com/cloudwu/skynet.git
-        ;;
         cd /root/skynet
         yum install -y readline autoconf
         scl enable devtoolset-9 "make linux"
@@ -23,6 +22,7 @@ if [ ! -f /root/skynet ]; then
         cp $basepath/OtherFile/jemalloc-dev.zip /root/
         umount $basepath
 
+        yum install -y unzip
         unzip -q skynet-master.zip
         unzip -q jemalloc-dev.zip -d skynet-master/3rd/
         rm -rf skynet-master/3rd/jemalloc
