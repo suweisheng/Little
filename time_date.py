@@ -68,6 +68,86 @@ def main():
     t = (1970, 1, 1, 8, 0, 0, 3, 1, 0)
     print time.mktime(t)
 
+def test_datetime():
+    # print datetime.MINYEAR, datetime.MAXYEAR # 支持的最小最大年
+
+    # ================== date 对象
+    # date = datetime.date
+    # date(2022, 10, 15) # 自定义date对象
+    # today = date.today() # 表示今日的date对象
+
+    # print today.year, today.month, today.day # int
+    # print today.replace(month=1) # 替换指定参数得到新date对象
+
+    # print today.toordinal() # 当前日期的序数(第几天) 初始值为1 即date(1, 1, 1)
+    # print date(2022, 10, 15).toordinal() - (date(2022, 10, 15).replace(month=1, day=1).toordinal()) # 计算一年中的第几天
+    # print today.weekday() # 周几 0-6 周一~周日
+    # print today.isoweekday() # 周几1-7 周一~周日
+    # print today.isocalendar() # 返回一个元表 (年, 一年中的第几周, 周几)
+    # print today.isoformat() # 标准日期字符串
+    # print today.ctime() # 标准日期字符串 C标准
+    # print today.strftime("%Y-%m-%d %H:%M:%S")
+    # print today.timetuple() # return struct_time
+
+
+    # ================== time 对象
+    # time = datetime.time
+    # time(14, 29, 21, 100000) # 自定义time对象,精确到微妙
+    # today = datetime.datetime.today().time() # 表示今日的time对象 
+
+    # print today.hour, today.minute, today.second, today.microsecond
+    # print today.replace(second=10)
+
+    # print today.isoformat() # HH:MM:SS.xx
+    # print today.strftime("%H:%M:%S")
+
+
+    # ================== timedelta 对象
+    # 将两个date、time或datetime实例之间的差异表示为微秒分辨率的持续时间
+    timedelta = datetime.timedelta
+    delay = timedelta(5, 6, 10, 3, 1000)  # 自定义timedelta对象,精确到微妙
+    delay = timedelta(days=365)
+
+    print delay.total_seconds() # 返回持续时间的总秒数
+    print delay.days, delay.seconds # 返回持续时间的天, 秒数
+
+    # t1 = datetime.date(2022, 10, 16); t2 = datetime.date(2022, 10, 17)
+    # t1 = datetime.datetime(2022, 10, 15, 14, 29, 21); t2 = datetime.datetime(2022, 10, 16, 14, 30, 22)
+    # delay = t2 - t1
+    
+    year = timedelta(days=365)
+    ten_years = (year * 10)
+    three_years = (ten_years - year) // 3
+    print abs(three_years - ten_years) == (2 * three_years + year)
+
+
+
+    # ================== datetime 对象 (date 和 time 的合体)
+    # datetime1 = datetime.datetime
+    # today = datetime1.today() # 表示今日的datetime对象 相同效果 datetime.fromtimestamp(time.time()
+    # today = datetime1.fromtimestamp(time.time()) # 根据时间戳构造
+    # datetime1(2022, 10, 15, 14, 29, 21, 100000) # 自定义datetime对象,精确到微妙
+    # datetime1.fromordinal(25) # 根据日期序数构造 0001-01-25 00:00:00
+
+    # print today.toordinal() # 当前日期的序数(第几天)
+    # print today.weekday() # 周几 0-6 周一~周日
+    # print today.isoweekday() # 周几1-7 周一~周日
+    # print today.isocalendar() # 返回一个元表 (年, 一年中的第几周, 周几)
+    # print today.isoformat() # 标准日期字符串 YYYY-MM-DDTHH:MM:SS
+    # print today.ctime() # 标准日期字符串 C标准 Wed Oct 12 15:00:55 2022
+    # print today.strftime("%Y-%m-%d %H:%M:%S") # 格式化输出
+    # print today.timetuple() # return struct_time
+
+    # print today.year, today.month, today.day
+    # print today.hour, today.minute, today.second, today.microsecond
+    # print today.replace(month=1) # 替换指定参数得到新datetime对象
+
+    # print today.date() # 返回date对象
+    # print today.time() # 返回time对象
+    # print today.timetz() # 返回timetz对象
+
+
+
 base_0 = int(time.mktime((2000, 1, 3, 0, 0, 0, 0, 0, 0)))
 base_6 = int(time.mktime((2000, 1, 3, 6, 0, 0, 0, 0, 0)))
 one_hort = 3600
@@ -186,4 +266,5 @@ def date_to_ts(time_str):
 
 if __name__ == "__main__":
     # main()
-    print format_time(get_year_begin0())
+    test_datetime()
+    # print format_time(get_year_begin0())

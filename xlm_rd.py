@@ -109,6 +109,9 @@ def test_xlsxwriter():
     cell_format.set_bold() # 加粗
     cell_format.set_font_color('red')
     cell_format.set_font_name('Times New Roman')
+    cell_format.set_align('center')
+    cell_format.set_align('vcenter')
+    cell_format.set_align(alignment)
 
     # ============================ sheet
     worksheet = workbook.add_worksheet(sheetname) # haha
@@ -164,13 +167,99 @@ def test_xlsxwriter():
 
     # worksheet.hide_zero() # 隐藏工作表中的零值
 
-
     workbook.close()
 
+def test_xlwt():
+    # 单元格格式 https://www.cnblogs.com/hls-code/p/14874087.html?ivk_sa=1024320u
+    # Style.py Formatting.py 文件
+    cell_type0 = xlwt.easyxf('font: name Times New Roman, color-index red, bold on')
 
+    cell_style = xlwt.XFStyle() # 格式对象
+
+    cell_font = xlwt.Font() # 字体对象
+    cell_font.name = 'Times New Roman' # 设置字体
+    cell_font.bold = True # 粗体
+    cell_font.underline = True # 下划线
+    cell_font.italic = True # 斜体
+    cell_font.colour_index = 0x0E
+    cell_style.font = cell_font # 将字体样式赋给格式对象中的字体
+
+    cell_alignment = xlwt.Alignment()
+    cell_alignment.horz = xlwt.Alignment.HORZ_CENTER # 水平对齐
+    cell_alignment.vert = xlwt.Alignment.VERT_CENTER # 垂直对齐
+    cell_style.alignment = cell_alignment
+
+
+    # (常用值：NO_LINE 无边框, THIN 薄, MEDIUM 中, THICK 厚,DASHED 虚线, DOTTED 点虚线）
+    cell_borders = xlwt.Borders() # 边框对象
+    cell_borders.left = xlwt.Borders.DASHED # 设置左边框
+    cell_borders.left_colour = 0x13
+    cell_borders.right = xlwt.Borders.DASHED
+    cell_borders.top = xlwt.Borders.DASHED
+    cell_borders.bottom = xlwt.Borders.DASHED
+    cell_style.borders = cell_borders # 将边框样式赋给格式对象
+
+    cell_pattern = xlwt.Pattern() 
+    cell_pattern.pattern = xlwt.Pattern.NO_PATTERN  # SOLID_PATTERN 或 NO_PATTERN
+    cell_pattern.pattern_fore_colour = 0x0E # 颜色（不止这些）：0=Black, 1=White, 2=Red, 3=Green, 4=Blue, 5=Yellow
+    cell_pattern.pattern_back_colour = 0x2C
+    cell_style.cell_pattern = cell_pattern # 将背景样式赋给格式对象
+
+    # 创建文件并且添加工作表
+    wb = xlwt.Workbook(encoding='utf8')
+    ws = wb.add_sheet('A Test Sheet', cell_overwrite_ok=True) # 多次写值允许覆盖
+
+    # row col 从0开始
+    ws.write(0, 0, "年后", cell_type0)
+    ws.write(0, 2, "年后2", cell_type0)
+    ws.write(0, 6, "年后2", cell_type0)
+    ws.write(1, 0, True, cell_type0)
+    ws.write(2, 0, 1234.56, cell_type0)
+    ws.write(2, 1, 3, cell_type0)
+    ws.write(2, 2, xlwt.Formula("A3+B3"))
+
+    # 合并单元格
+    ws.merge(r1=2, r2=3, c1=4, c2=5) # 合并单元格。
+    ws.write_merge(r1=4, r2=5, c1=4, c2=5, label="哈哈", style=cell_style) # 合并单元格并写入
+
+    print ws.row_height
+    print ws.col_width
+
+    # 行 列对象
+    row = ws.row(0)
+    row.height = 255
+    row.hidden = False
+    row.set_style(cell_type0)
+    print row.get_cells_count() # 该行有效单元格数量
+    print row.get_min_col() # 该行最小列索引
+    print row.get_max_col() # 该行最大列索引
+    print row.get_index() # 该行索引
+    # row.insert_cell(col_index=0, cell_obj) # 插入单元格
+    # row.insert_mulcells(colx1=0, colx2=2, cell_obj) # 多次插入单元格
+    # row.write(col=1, label="aa", style=cell_type0) # 写值通用
+    # row.set_cell_text(colx=1, value="xx") # 设置值, 会忽略该行的style
+    # row.set_cell_blank(colx=1) # 设置空
+    # row.set_cell_mulblanks(first_colx=0, last_colx=5) # 批量设置空
+    # row.set_cell_number()
+    # row.set_cell_date(datetime_obj)
+    # row.set_cell_formula()
+    # row.set_cell_boolean()
+    # row.set_cell_error()
+    # row.set_cell_rich_text()
+
+
+    col = ws.col(0) # 列的方法很少
+    col.width = 255*30 # 列宽度
+    print col.get_width()
+    col.set_width(255*30)
+    col.set_style(cell_type0)
+
+
+    wb.save('xlwttest.xls')
 
 
 
 
 # test_xlrd()
-test_xlsxwriter()
+# test_xlsxwriter()
+test_xlwt()
