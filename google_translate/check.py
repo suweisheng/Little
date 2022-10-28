@@ -36,6 +36,8 @@ else:
     
 
 avaliable = []
+total = len(ips)
+count = 1
 for ip in ips:
     # print 'Checking {ip} ...'.format(ip=ip),
     result = check_ip(ip)
@@ -46,6 +48,9 @@ for ip in ips:
         ms = round(result * 1000)
         # print '{ms}ms'.format(ms=ms)
         avaliable.append((ms, ip))
+    print "{}/{}\r".format(count, total),
+    count += 1
+print ""
 
 avaliable.sort()
 top5 = avaliable[:5]
