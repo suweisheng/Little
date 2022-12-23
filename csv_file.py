@@ -3,6 +3,11 @@
 import csv
 # 所谓的CSV(逗号分隔值)格式是电子表格和数据库最常用的导入和导出格式
 
+# csv 中文乱码解决
+# import codecs
+# csvfile.write(codecs.BOM_UTF8)
+
+
 def test_w_csv():
     # delimiter 指定分隔符，默认为逗号，这里指定为空格
     # quotechar 表示引用符
