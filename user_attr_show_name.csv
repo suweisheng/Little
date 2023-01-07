@@ -1,6 +1,6 @@
 ﻿用户属性,显示名,属性说明
 top_hero_list.name,英雄列表-英雄名称,前15最高战力英雄列表-英雄名称
-channel_mid,广告ID,注册时记录，在游戏启动时设置，上传用户的广告ID(广告入口)
+mar_hall_4,讲武堂-坚韧,变化时更新覆盖
 first_login_time,首次登录时间,注册时记录
 gold,金币数量,变化时更新覆盖，过于频繁可考虑每10分钟更新一次
 mar_hall_2,讲武堂-防守,变化时更新覆盖
@@ -30,9 +30,8 @@ role_id,角色ID,注册时记录
 mastery_career_order_4,职业专精-法师子等级,登出时更新覆盖
 os_version,操作系统版本,登陆时更新覆盖，例Android OS 9
 abyss_team_wave,影子城团队-波数,变化时更新覆盖
-mastery_career_level_4,职业专精-法师等级,登出时更新覆盖
 vip_level,VIP等级,登陆、变化时更新覆盖
-mar_hall_4,讲武堂-坚韧,变化时更新覆盖
+mastery_career_order_2,职业专精-刺客子等级,登出时更新覆盖
 mastery_career_order_3,职业专精-射手子等级,登出时更新覆盖
 app_version,app版本号,登陆时更新覆盖
 mastery_career_level_1,职业专精-战士等级,登出时更新覆盖
@@ -47,7 +46,7 @@ org_sever_id,创号服务器ID,注册时记录，游戏服务器ID
 mastery_career_level_5,职业专精-辅助等级,登出时更新覆盖
 top_hero_list.level,英雄列表-英雄等级,前15最高战力英雄列表-英雄等级
 top_hero_list.score,英雄列表-英雄战力,前15最高战力英雄列表-英雄战力
-mastery_career_order_2,职业专精-刺客子等级,登出时更新覆盖
+mastery_career_level_4,职业专精-法师等级,登出时更新覆盖
 role_name,角色昵称,登陆、变化时更新覆盖
 draw_privilege,招募特权,变化时更新覆盖，true 表示激活；false或null表示未激活
 top_hero_list.favor_level,英雄列表-英雄好友度等级,前15最高战力英雄列表-英雄羁绊等级
@@ -60,7 +59,7 @@ family_name,联盟名称,登陆、变化时更新覆盖
 top_hero_list.quality,英雄列表-英雄品质,前15最高战力英雄列表-英雄品质
 last_pay_time,最后充值时间,每次充值时覆盖原来记录
 vip_exp,VIP经验,变化时更新覆盖
-channel_gid,游戏ID,注册时记录，在游戏启动时设置，上传用户的游戏ID(马甲包等)
+family_id,联盟ID,登陆、变化时更新覆盖，0表示无联盟
 inherity_level_4,传承-力量防具等级,登出时更新覆盖
 main_stage_chapter,主线关卡章节,变化时更新覆盖
 mastery_career_order_5,职业专精-辅助子等级,登出时更新覆盖
@@ -72,12 +71,11 @@ channel_id,渠道,注册时记录，在游戏启动时设置，上传用户的�
 mar_hall_1,讲武堂-均衡,变化时更新覆盖
 tower_2,爬塔进度-火,变化时更新覆盖
 abyss_single_wave,影子城单人-波数,变化时更新覆盖
-family_id,联盟ID,登陆、变化时更新覆盖，0表示无联盟
+main_stage_order,主线关卡序号,变化时更新覆盖
 top_hero_list.hero_id,英雄列表-英雄ID,前15最高战力英雄列表-英雄ID
 inherity_level_5,传承-敏捷防具等级,登出时更新覆盖
 mastery_career_order_1,职业专精-战士子等级,登出时更新覆盖
 hangup_privilege,挂机特权,变化时更新覆盖，true 表示激活；false或null表示未激活
 growth_fund_1,成长基金,登陆、变化时更新覆盖，0表示没购买，1表示购买普通基金，2表示购买了高级基金
 network_type,网络类型,登录时更新覆盖，正在使用的网络连接类型：4G/wifi/。。。
-main_stage_order,主线关卡序号,变化时更新覆盖
 growth_fund_2,签到基金,登陆、变化时更新覆盖，0表示没购买，1表示购买普通基金，2表示购买了高级基金
