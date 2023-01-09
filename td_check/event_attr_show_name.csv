@@ -40,7 +40,7 @@ item_gain.item_id,获得物品列表-物品ID,物品id
 resonance_reason,共鸣操作,取值：开格子、上英雄、下英雄、刷新冷却
 old_power,养成前英雄战力,
 chat_num_list.count,发言次数,
-tower_type_id,玩法类型ID,
+tower_type_id,玩法类型ID ,
 practice_level_new,修行新等级,操作为修行突破时，记录突破后新等级
 old_equip_or_book_id,旧装备或功法ID,
 store_type,商店类型,商店名字：商会、每日特卖、追缉商店、联盟商店、联赛商店、冠军商店、突围商店、巅峰商店、升级礼包、每日礼包、通缉令礼包

@@ -9,6 +9,13 @@ import csv
 import codecs
 import os
 import sys
+import json
+
+ENCODING = 'utf8'
+if sys.platform == 'win32':
+    ENCODING = 'gbk'
+reload(sys)
+sys.setdefaultencoding(ENCODING)
 
 def get_file_path(file_name, is_keyword=None, is_full_path=None):
     root_path = os.path.dirname(os.path.abspath(sys.argv[0]))
@@ -32,7 +39,7 @@ def get_td_excel_data():
         v = sheet.row_values(rowx=i, start_colx=0, end_colx=sheet.ncols)
         if not v[0]: break
         if user_attr_dict.has_key(v[0]):
-            raise Exception(u"duplicate user attr:"+v[0])
+            raise Exception(u"duplicate user attr: "+v[0])
         user_attr_dict[v[0]] = v
     # print sheet.row_values(rowx=0)
     # print len(user_attr_dict)
@@ -43,7 +50,7 @@ def get_td_excel_data():
         v = sheet.row_values(rowx=i, start_colx=0, end_colx=sheet.ncols)
         if not v[0]: break
         if event_pub_attr_dict.has_key(v[0]):
-            raise Exception(u"event public attr duplicate:"+v[0])
+            raise Exception(u"event public attr duplicate: "+v[0])
         event_pub_attr_dict[v[0]] = v
     # print sheet.row_values(rowx=0)
     # print len(event_pub_attr_dict)
@@ -55,7 +62,7 @@ def get_td_excel_data():
         name = sheet.cell_value(rowx=i, colx=0)
         if name:
             if event_dict.has_key(name):
-                raise Exception(u"event name duplicate:"+curr_name)
+                raise Exception(u"event name duplicate: "+curr_name)
             curr_name = name
             event_dict[curr_name] = sheet.row_values(rowx=i, start_colx=0, end_colx=4)
             event_dict[curr_name].append({})
@@ -67,23 +74,27 @@ def get_td_excel_data():
             if attr_info[0]:
                 attr_dict = event_dict[curr_name][-1]
                 if attr_dict.has_key(attr_info[0]):
-                    raise Exception(u"event private attr duplicate:"+curr_name+", "+attr_info[0])
+                    raise Exception(u"event private attr duplicate: "+curr_name+", "+attr_info[0])
                 attr_dict[attr_info[0]] = attr_info
             else:
                 break
     # print sheet.row_values(rowx=0)
     # print len(event_dict)
-        
 
-    # # # # # # # # # # # # # # # # # # # # # # # 
+
     event_pri_attr_dict = {}
     for event_name, event_data in event_dict.items():
         for attr_name, attr_data in event_data[-1].items():
-            if event_pub_attr_dict.has_key(attr_name) and event_data[3] != u'客户端' and event_data[3] != u'虚拟账号“00000”上报':
-                raise Exception(u"event private attr in public_attr_pool:"+event_name+", "+attr_name)
+            if event_pub_attr_dict.has_key(attr_name):
+                if event_data[3] != u'客户端' and event_data[3] != u'虚拟账号“00000”上报':
+                    raise Exception(u"event private attr in public_attr_pool:"+event_name+", "+attr_name)
             if event_pri_attr_dict.has_key(attr_name):
                 if event_pri_attr_dict[attr_name] != attr_data:
-                    raise Exception(u"event private attr describe in conflict:"+event_name+", "+attr_name)
+                    err_msg = u"========>\n{}\n{}".format(
+                        json.dumps(attr_data).decode('unicode_escape'),
+                        json.dumps(event_pri_attr_dict[attr_name]).decode('unicode_escape')
+                    )
+                    raise Exception(u"event private attr describe in conflict:\n"+err_msg)
             else:
                 event_pri_attr_dict[attr_name] = attr_data
 
@@ -96,9 +107,8 @@ def get_td_excel_data():
     event_all_attr_name_dict = {}
     for attr_name, attr_data in event_all_attr_dict.items():
         if event_all_attr_name_dict.has_key(attr_data[1]):
-            if event_all_attr_name_dict[attr_data[1]] != attr_name:
-                print attr_data[1], event_all_attr_name_dict[attr_data[1]], attr_name
-                raise Exception(u"event private attr show_name in duplicate:")
+            err_msg = u"{}; {}; {}".format(attr_data[1], event_all_attr_name_dict[attr_data[1]], attr_name)
+            raise Exception(u"event private attr show_name in duplicate: "+err_msg)
         else:
             event_all_attr_name_dict[attr_data[1]] = attr_name
 
@@ -165,11 +175,12 @@ def get_td_lua_data():
                 event_dict[event_name] = re.findall('\"(\w+)\"', text)
                 event_dict[event_name].sort()
             elif start_flag == "user_attr":
-                attr_list = re.findall('(\w+)\s*=\s*[01]', text)
-                for name in attr_list:
+                attr_list = re.findall('(\w+)\s*=\s*([01])', text)
+                for attr in attr_list:
+                    name = attr[0]
                     if user_attr_dict.has_key(name):
                         raise Exception("lua user attr duplicate: "+line_num+", "+name)
-                    user_attr_dict[name] = 1
+                    user_attr_dict[name] = attr[1]
             elif start_flag == "event_public_attr":
                 name = re.search('\[\"(\w+)\"\]', text).group(1)
                 if event_pub_attr_dict.has_key(name):
@@ -181,22 +192,19 @@ def get_td_lua_data():
         user_attr_dict = user_attr_dict,
         event_pub_attr_dict = event_pub_attr_dict,
     )
+
     return lua_data
 
-def check_compaire():
-    excel_data = get_td_excel_data()
-    lua_data = get_td_lua_data()
-
+def compaire_excel_lua(excel_data, lua_data):
     excel_srv_event_dict = {}
     for event_name, event_data in excel_data["event_dict"].items():
         if event_data[3] != u'客户端' and event_data[3] != u'虚拟账号“00000”上报':
             attr_list = []
             for name in event_data[-1]:
-                if not ("." in name):
+                if "." not in name:
                     attr_list.append(str(name))
             attr_list.sort()
             excel_srv_event_dict[str(event_name)] = attr_list
-
     lua_srv_event_dict = lua_data["event_dict"]
     miss_list, surplus_list = [], []
     for event_name, event_data in excel_srv_event_dict.items():
@@ -206,39 +214,52 @@ def check_compaire():
         if not excel_srv_event_dict.has_key(event_name):
             surplus_list.append(event_name)
     if miss_list or surplus_list:
-        print "miss_list", miss_list, "\n", "surplus_list", surplus_list
-        raise Exception("lua_event_num and maidian_event_num do not match")
-
+        err_msg = u"========>\nmiss_list:{}\nsurplus_list:{}".format(
+            json.dumps(miss_list).decode('unicode_escape'),
+            json.dumps(surplus_list).decode('unicode_escape')
+        )
+        raise Exception("lua_event_num and maidian_event_num do not match:\n"+err_msg)
     for event_name, event_data in excel_srv_event_dict.items():
         if lua_srv_event_dict[event_name] != event_data:
-            print "========================"
-            print "event_name:", event_name
-            print "lua:", lua_event_dict[event_name]
-            print "maidian:", event_data
-            print "========================"
-            raise Exception("lua event and maidian event conflict")
+            err_msg = u"========>\n{}\n{}\n{}".format(
+                event_name,
+                json.dumps(lua_srv_event_dict[event_name]).decode('unicode_escape'),
+                json.dumps(event_data).decode('unicode_escape')
+            )
+            raise Exception("lua event and maidian event conflict:\n"+err_msg)
 
     temp = excel_data["user_attr_dict"]
     excel_user_attr_dict = {}
-    for name in temp:
-        if not ("." in name):
-            excel_user_attr_dict[name] = 1
+    update_type = {"user_setOnce":"0", "user_set":"1"}
+    for attr_name, attr_data in temp.items():
+        if "." not in attr_name:
+            excel_user_attr_dict[str(attr_name)] = update_type.get(attr_data[3] ,"NOne")
     lua_user_attr_dict = lua_data["user_attr_dict"]
     miss_list, surplus_list = [], []
-    for event_name, _ in excel_user_attr_dict.items():
-        if not lua_user_attr_dict.has_key(event_name):
-            miss_list.append(event_name)
-    for event_name, _ in lua_user_attr_dict.items():
-        if not excel_user_attr_dict.has_key(event_name):
-            surplus_list.append(event_name)
+    for attr_name, _ in excel_user_attr_dict.items():
+        if not lua_user_attr_dict.has_key(attr_name):
+            miss_list.append(attr_name)
+    for attr_name, _ in lua_user_attr_dict.items():
+        if not excel_user_attr_dict.has_key(attr_name):
+            surplus_list.append(attr_name)
     if miss_list or surplus_list:
-        print "miss_list", miss_list, "\n", "surplus_list", surplus_list
-        raise Exception("lua_user_attr_num and maidian_user_attr_num do not match")
+        err_msg = u"========>\nmiss_list:{}\nsurplus_list:{}".format(
+            json.dumps(miss_list).decode('unicode_escape'),
+            json.dumps(surplus_list).decode('unicode_escape')
+        )
+        raise Exception("lua_user_attr_num and maidian_user_attr_num do not match:\n"+err_msg)
+    type_err_list = []
+    for attr_name, update_type in lua_user_attr_dict.items():
+        if excel_user_attr_dict[attr_name] != update_type:
+            type_err_list.append(attr_name)
+    if type_err_list:
+        err_msg = u"========>\n{}".format(json.dumps(type_err_list).decode('unicode_escape'))
+        raise Exception("lua_user_attr and maidian_user_attr update_type do not match:\n"+err_msg)
 
     temp = excel_data["event_pub_attr_dict"]
     excel_event_pub_attr_dict = {}
     for name in temp:
-        if not ("." in name):
+        if "." not in name:
             excel_event_pub_attr_dict[name] = 1
     lua_event_pub_attr_dict = lua_data["event_pub_attr_dict"]
     miss_list, surplus_list = [], []
@@ -249,49 +270,69 @@ def check_compaire():
         if not excel_event_pub_attr_dict.has_key(event_name):
             surplus_list.append(event_name)
     if miss_list or surplus_list:
-        print "miss_list", miss_list, "\n", "surplus_list", surplus_list
-        raise Exception("lua_event_pub_attr_num and maidian_event_pub_attr_num do not match")
+        err_msg = u"========>\nmiss_list:{}\nsurplus_list:{}".format(
+            json.dumps(miss_list).decode('unicode_escape'),
+            json.dumps(surplus_list).decode('unicode_escape')
+        )
+        raise Exception("lua_event_pub_attr_num and maidian_event_pub_attr_num do not match\n"+err_msg)
 
-    build_csv_file(excel_data)
-
-
+def check_meta_data(excel_data):
     filename = get_file_path(u"猎码计划_埋点方案", True)
-    if filename:
-        workbook = xlrd.open_workbook(filename)
+    if not filename:
+        return
 
-        sheet = workbook.sheet_by_name(u"#事件数据")
-        event_name_list = []
-        for i in xrange(1, sheet.nrows):
-            name = sheet.cell_value(rowx=i, colx=0)
-            if name:
-                event_name_list.append(name)
+    workbook = xlrd.open_workbook(filename)
 
-        sheet = workbook.sheet_by_name(u"#用户数据")
-        user_name_list = []
-        for i in xrange(1, sheet.nrows):
-            name = sheet.cell_value(rowx=i, colx=0)
-            if name:
-                user_name_list.append(name)
+    sheet = workbook.sheet_by_name(u"#事件数据")
+    event_name_list = []
+    event_attr_name_dict = {}
+    for i in xrange(1, sheet.nrows):
+        event_name = sheet.cell_value(rowx=i, colx=0)
+        event_attr_name = sheet.cell_value(rowx=i, colx=4)
+        if event_name:
+            event_name_list.append(event_name)
+        if not event_attr_name_dict.has_key(event_attr_name):
+            event_attr_name_dict[event_attr_name] = 1
+        
+    sheet = workbook.sheet_by_name(u"#用户数据")
+    user_name_list = sheet.col_values(colx=0, start_rowx=1, end_rowx=sheet.nrows)
 
-        miss_list = []
-        for event_name, event_data in excel_data["event_dict"].items():
-            if event_name not in event_name_list:
-                miss_list.append((event_name, event_data[1]))
-        if miss_list:
-            print "=======> not trigger event log:"
-            for i in xrange(len(miss_list)):
-                print u"{}.{} ({})".format(i, miss_list[i][0], miss_list[i][1])
-            print ""
 
-        miss_list = []
-        for attr_name, attr_data in excel_data["user_attr_dict"].items():
-            if attr_name not in user_name_list:
-                miss_list.append((attr_name, attr_data[1]))
-        if miss_list:
-            print "=======> not trigger user attr log:"
-            for i in xrange(len(miss_list)):
-                print u"{}.{} ({})".format(i, miss_list[i][0], miss_list[i][1])
-            print ""
-    
+    miss_list = []
+    for event_name, event_data in excel_data["event_dict"].items():
+        if event_name not in event_name_list:
+            miss_list.append((event_name, event_data[1]))
+    if miss_list:
+        err_msg = "=======> not trigger event log:\n"
+        for i in xrange(len(miss_list)):
+            err_msg = err_msg + u"{}.{} ({})\n".format(i, miss_list[i][0], miss_list[i][1])
+        print err_msg
 
-check_compaire()
+    miss_list = []
+    for attr_name, attr_data in excel_data["user_attr_dict"].items():
+        if attr_name not in user_name_list:
+            miss_list.append((attr_name, attr_data[1]))
+    if miss_list:
+        err_msg =  "=======> not trigger user attr log:\n"
+        for i in xrange(len(miss_list)):
+            err_msg = err_msg +  u"{}.{} ({})\n".format(i, miss_list[i][0], miss_list[i][1])
+        print err_msg
+
+    miss_list = []
+    for attr_name, attr_data in excel_data["event_all_attr_dict"].items():
+        if not event_attr_name_dict.has_key(attr_name):
+            miss_list.append((attr_name, attr_data[1]))
+    if miss_list:
+        err_msg =  "=======> not trigger event attr log:\n"
+        for i in xrange(len(miss_list)):
+            err_msg = err_msg +  u"{}.{} ({})\n".format(i, miss_list[i][0], miss_list[i][1])
+        print err_msg
+
+
+excel_data = get_td_excel_data()
+build_csv_file(excel_data)
+
+lua_data = get_td_lua_data()
+compaire_excel_lua(excel_data, lua_data)
+
+check_meta_data(excel_data)
